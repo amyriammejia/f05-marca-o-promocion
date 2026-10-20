@@ -1,0 +1,23 @@
+{
+  "origen": "Datos sintéticos para práctica académica; tienda ficticia de artículos para el hogar",
+  "semilla": 20261006,
+  "fecha_corte": "2026-07-31",
+  "fin_observacion": "2026-09-29",
+  "cohorte": "Clientes cuya primera compra en la tienda fue mediante promoción; historial hasta la fecha de corte",
+  "faltantes_introducidos": 30,
+  "valores_invalidos_introducidos": 6,
+  "duplicados_introducidos": 8,
+  "archivos": {
+    "clientes_promociones_original.csv": {
+      "filas": 600,
+      "columnas": 19,
+      "sha256": "8809470507fe5f7619a8883d378f1a305a5fedd2db04cb5a057f211d473a2767"
+    },
+    "clientes_promociones.csv": {
+      "filas": 608,
+      "columnas": 19,
+      "sha256": "41610e45ed75d3338ce911432393bc3abd012135b7de000cb657a8c5cb114a83"
+    }
+  },
+  "advertencia": "Las relaciones provienen del generador. Las métricas no validan desempeño en un negocio real."
+}

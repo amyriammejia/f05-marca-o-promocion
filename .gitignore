@@ -1,0 +1,13 @@
+stream_train/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+respaldo_clase_06_octubre/
+entrega/
+*.log
+
+data/dataset_clientes_sinteticos_segmentos_marketing.csv

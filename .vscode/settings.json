@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/stream_train/bin/python",
+  "python.terminal.activateEnvironment": true
+}

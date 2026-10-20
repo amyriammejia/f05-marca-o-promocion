@@ -1,0 +1,609 @@
+cliente_id,fecha_corte,categoria_preferida,canal_origen,motivo_declarado,compras_12m,compras_sin_promocion_12m,compras_con_cupon_12m,ticket_promedio_mxn,descuento_inicial_pct,dias_desde_ultima_compra,visitas_web_30d,carritos_30d,clics_campanas_30d,satisfaccion_1a5,incidencia_abierta,permiso_contacto,recompra_60d,recompra_sin_promocion_60d
+SIM-0001,2026-07-31,Organización,Redes sociales,Diseño,9,1,8,542.31,32.8,50,3,1,0,3.0,1,1,0,0
+SIM-0002,2026-07-31,Decoración,Buscador,Practicidad,10,3,7,662.69,25.2,9,1,0,1,3.0,0,1,1,1
+SIM-0003,2026-07-31,Organización,Redes sociales,Precio,5,1,4,507.26,15.0,21,6,0,0,2.0,0,1,0,0
+SIM-0004,2026-07-31,Decoración,Buscador,Durabilidad,4,0,4,370.91,24.8,85,3,2,1,4.0,0,1,0,0
+SIM-0005,2026-07-31,Decoración,Buscador,Precio,7,1,6,530.75,24.5,57,4,2,0,4.0,0,1,0,0
+SIM-0006,2026-07-31,Organización,Redes sociales,Practicidad,12,9,3,1009.8,13.6,26,5,1,2,3.0,0,1,1,0
+SIM-0007,2026-07-31,Organización,Recomendación,Diseño,12,4,8,561.56,7.3,15,2,2,2,3.0,0,1,1,0
+SIM-0008,2026-07-31,Decoración,Redes sociales,Durabilidad,3,1,2,407.33,15.3,82,6,2,2,4.0,0,1,1,0
+SIM-0009,2026-07-31,Cocina,Redes sociales,Practicidad,12,6,6,376.68,21.7,34,3,1,0,3.0,0,1,1,0
+SIM-0010,2026-07-31,Cocina,Recomendación,Precio,7,2,5,361.42,7.0,55,4,0,0,4.0,0,1,0,0
+SIM-0011,2026-07-31,Organización,Recomendación,Precio,1,0,1,914.73,7.1,20,5,2,1,4.0,0,1,0,0
+SIM-0012,2026-07-31,Organización,Redes sociales,Practicidad,3,0,3,629.41,27.1,55,6,1,1,3.0,0,1,1,0
+SIM-0013,2026-07-31,Organización,Buscador,Durabilidad,12,2,10,664.25,30.7,24,2,1,2,4.0,0,1,0,0
+SIM-0014,2026-07-31,Decoración,Recomendación,Diseño,8,5,3,725.13,24.6,111,4,2,1,4.0,0,0,1,0
+SIM-0015,2026-07-31,Cocina,Redes sociales,Practicidad,10,5,5,384.28,25.5,20,6,1,0,3.0,0,1,0,0
+SIM-0016,2026-07-31,Organización,Redes sociales,Durabilidad,4,1,3,449.41,10.4,69,2,1,3,3.0,0,1,0,0
+SIM-0017,2026-07-31,Cocina,Redes sociales,Practicidad,2,0,2,303.15,28.6,20,4,0,1,2.0,0,1,0,0
+SIM-0018,2026-07-31,Organización,Buscador,Durabilidad,11,0,11,654.08,23.7,35,4,2,1,5.0,1,1,1,0
+SIM-0019,2026-07-31,Decoración,Buscador,Precio,9,5,4,649.28,29.7,43,5,1,2,3.0,0,1,1,1
+SIM-0020,2026-07-31,Cocina,Recomendación,Diseño,11,2,9,557.22,30.3,34,3,0,3,4.0,0,1,1,1
+SIM-0021,2026-07-31,Organización,Buscador,Durabilidad,11,5,6,556.68,22.9,29,6,1,2,2.0,0,1,1,0
+SIM-0022,2026-07-31,Decoración,Recomendación,Diseño,2,1,1,321.78,31.5,28,8,2,3,1.0,0,0,0,0
+SIM-0023,2026-07-31,Organización,Buscador,Diseño,3,0,3,562.74,10.6,28,4,0,1,5.0,0,1,1,1
+SIM-0024,2026-07-31,Cocina,Recomendación,Diseño,4,3,1,706.77,26.1,65,5,2,2,2.0,0,1,0,0
+SIM-0025,2026-07-31,Decoración,Buscador,Durabilidad,1,0,1,566.68,7.0,8,6,0,1,4.0,0,1,1,0
+SIM-0026,2026-07-31,Organización,Recomendación,Practicidad,11,9,2,675.48,23.3,41,5,0,2,5.0,0,0,1,1
+SIM-0027,2026-07-31,Decoración,Redes sociales,Diseño,6,4,2,892.47,24.2,74,9,0,1,3.0,1,1,0,0
+SIM-0028,2026-07-31,Cocina,Redes sociales,Precio,10,5,5,1075.48,30.9,16,6,2,2,5.0,0,1,1,1
+SIM-0029,2026-07-31,Decoración,Buscador,Diseño,2,0,2,857.43,30.3,17,5,2,0,4.0,0,1,0,0
+SIM-0030,2026-07-31,Decoración,Buscador,Diseño,7,4,3,614.22,35.9,52,6,1,1,2.0,0,1,1,1
+SIM-0031,2026-07-31,Organización,Buscador,Durabilidad,4,2,2,,18.4,24,5,1,0,3.0,0,1,1,0
+SIM-0032,2026-07-31,Decoración,Redes sociales,Diseño,12,4,8,,18.4,25,4,1,3,5.0,0,0,1,1
+SIM-0033,2026-07-31,Decoración,Redes sociales,Practicidad,4,2,2,,23.7,30,3,0,4,3.0,0,1,0,0
+SIM-0034,2026-07-31,Cocina,Recomendación,Durabilidad,1,0,1,,18.9,134,4,1,1,3.0,0,1,0,0
+SIM-0035,2026-07-31,Decoración,Recomendación,Precio,10,6,4,,19.6,28,10,1,1,3.0,0,1,1,0
+SIM-0036,2026-07-31,Organización,Recomendación,Precio,11,5,6,,30.9,30,3,0,0,5.0,0,1,0,0
+SIM-0037,2026-07-31,Decoración,Redes sociales,Durabilidad,8,4,4,,9.8,81,6,1,3,5.0,1,0,0,0
+SIM-0038,2026-07-31,Cocina,Redes sociales,Durabilidad,8,7,1,,21.1,22,10,2,3,4.0,0,1,1,1
+SIM-0039,2026-07-31,Organización,Recomendación,Diseño,4,2,2,,13.0,23,4,0,0,3.0,0,1,0,0
+SIM-0040,2026-07-31,Decoración,Buscador,Practicidad,4,2,2,,28.3,74,6,0,3,2.0,0,1,0,0
+SIM-0041,2026-07-31,Decoración,Recomendación,Practicidad,2,1,1,,19.3,27,1,0,0,3.0,0,1,0,0
+SIM-0042,2026-07-31,Cocina,Redes sociales,Durabilidad,7,5,2,,19.1,6,10,6,1,2.0,0,1,0,0
+SIM-0043,2026-07-31,Organización,Recomendación,Practicidad,6,3,3,548.65,20.9,23,3,1,2,4.0,0,1,1,0
+SIM-0044,2026-07-31,Organización,Buscador,Practicidad,4,3,1,1139.82,24.3,8,7,3,2,5.0,1,1,0,0
+SIM-0045,2026-07-31,Organización,Redes sociales,Precio,7,0,7,770.11,28.5,46,4,2,0,5.0,0,1,0,0
+SIM-0046,2026-07-31,Organización,Buscador,Precio,3,1,2,663.85,19.1,98,4,0,3,5.0,0,0,0,0
+SIM-0047,2026-07-31,Decoración,Buscador,Practicidad,5,3,2,392.7,20.4,34,4,2,4,4.0,0,1,1,1
+SIM-0048,2026-07-31,Organización,Buscador,Diseño,8,1,7,664.31,28.5,211,3,0,0,3.0,0,1,0,0
+SIM-0049,2026-07-31,Cocina,Recomendación,Precio,10,3,7,547.97,18.5,119,4,3,0,3.0,0,1,0,0
+SIM-0050,2026-07-31,Cocina,Redes sociales,Durabilidad,8,3,5,495.7,20.5,45,7,0,2,3.0,0,1,1,0
+SIM-0051,2026-07-31,Decoración,Redes sociales,Diseño,9,0,9,261.59,26.3,19,5,2,0,4.0,0,1,1,0
+SIM-0052,2026-07-31,Decoración,Recomendación,Practicidad,10,4,6,282.16,29.3,55,6,1,1,4.0,0,1,1,0
+SIM-0053,2026-07-31,Decoración,Buscador,Diseño,2,1,1,926.02,27.9,61,5,1,1,4.0,0,1,0,0
+SIM-0054,2026-07-31,Decoración,Buscador,Diseño,11,2,9,260.06,21.0,108,2,1,2,5.0,0,1,0,0
+SIM-0055,2026-07-31,Organización,Recomendación,Precio,7,1,6,396.75,25.9,29,4,2,1,3.0,0,0,1,0
+SIM-0056,2026-07-31,Cocina,Buscador,Diseño,11,2,9,916.53,23.4,38,4,0,1,5.0,0,1,1,1
+SIM-0057,2026-07-31,Decoración,Recomendación,Durabilidad,4,2,2,641.36,36.1,49,7,2,3,4.0,0,1,0,0
+SIM-0058,2026-07-31,Cocina,Recomendación,Precio,11,8,3,730.85,23.4,37,5,2,1,3.0,0,1,1,1
+SIM-0059,2026-07-31,Cocina,Redes sociales,Diseño,3,0,3,470.73,23.4,78,0,0,1,4.0,0,1,1,1
+SIM-0060,2026-07-31,Cocina,Buscador,Durabilidad,11,9,2,784.43,16.7,115,3,2,4,4.0,0,1,0,0
+SIM-0061,2026-07-31,Cocina,Buscador,Practicidad,1,0,1,505.88,17.2,66,1,0,1,3.0,0,1,1,0
+SIM-0062,2026-07-31,Decoración,Buscador,Diseño,4,2,2,780.53,32.8,57,5,0,2,2.0,0,1,0,0
+SIM-0063,2026-07-31,Organización,Redes sociales,Diseño,11,5,6,489.42,26.1,82,2,0,4,2.0,0,0,1,1
+SIM-0064,2026-07-31,Decoración,Buscador,Precio,6,0,6,221.55,20.1,105,8,0,0,4.0,0,0,0,0
+SIM-0065,2026-07-31,Cocina,Buscador,Precio,10,4,6,492.53,27.4,101,4,1,2,4.0,0,0,0,0
+SIM-0066,2026-07-31,Organización,Redes sociales,Practicidad,5,1,4,1088.36,11.2,60,2,2,3,3.0,0,1,0,0
+SIM-0067,2026-07-31,Cocina,Buscador,Practicidad,11,8,3,1259.57,27.9,44,2,0,1,5.0,0,0,1,1
+SIM-0068,2026-07-31,Cocina,Recomendación,Precio,5,3,2,329.49,19.3,53,8,3,1,4.0,1,1,1,1
+SIM-0069,2026-07-31,Decoración,Recomendación,Durabilidad,2,0,2,576.72,27.4,49,8,0,4,3.0,0,1,0,0
+SIM-0070,2026-07-31,Organización,Recomendación,Precio,1,0,1,501.48,25.4,109,8,3,3,4.0,0,1,0,0
+SIM-0071,2026-07-31,Organización,Recomendación,Durabilidad,7,3,4,751.04,32.0,7,5,0,0,,0,1,1,1
+SIM-0072,2026-07-31,Organización,Recomendación,Diseño,1,0,1,648.48,20.3,97,7,0,4,,0,0,0,0
+SIM-0073,2026-07-31,Decoración,Redes sociales,Diseño,6,4,2,471.35,19.9,49,4,2,3,,1,1,1,0
+SIM-0074,2026-07-31,Cocina,Recomendación,Durabilidad,5,0,5,954.47,21.5,70,9,0,5,,0,1,0,0
+SIM-0075,2026-07-31,Cocina,Redes sociales,Durabilidad,6,1,5,647.64,26.2,201,2,0,0,,0,1,0,0
+SIM-0076,2026-07-31,Organización,Buscador,Practicidad,3,0,3,467.99,21.7,67,2,1,1,,1,1,0,0
+SIM-0077,2026-07-31,Decoración,Recomendación,Diseño,1,0,1,574.82,16.9,45,6,0,1,,1,1,0,0
+SIM-0078,2026-07-31,Cocina,Redes sociales,Practicidad,11,7,4,418.1,28.2,48,8,1,1,,0,1,1,1
+SIM-0079,2026-07-31,Organización,Redes sociales,Durabilidad,6,1,5,594.04,29.9,17,2,0,0,,0,1,0,0
+SIM-0080,2026-07-31,Decoración,Recomendación,Precio,2,0,2,533.49,25.3,65,10,2,2,,0,1,1,0
+SIM-0081,2026-07-31,Organización,Buscador,Diseño,6,1,5,515.78,10.6,44,4,0,2,4.0,0,1,1,0
+SIM-0082,2026-07-31,Cocina,Recomendación,Diseño,1,0,1,486.51,17.5,48,9,3,3,3.0,0,1,1,1
+SIM-0083,2026-07-31,Cocina,Recomendación,Precio,11,9,2,542.09,14.0,55,4,1,2,3.0,0,1,1,1
+SIM-0084,2026-07-31,Decoración,Buscador,Practicidad,8,2,6,518.78,23.4,94,1,0,2,3.0,0,1,0,0
+SIM-0085,2026-07-31,Cocina,Redes sociales,Diseño,5,2,3,1548.62,30.6,103,7,2,1,3.0,0,1,0,0
+SIM-0086,2026-07-31,Decoración,Recomendación,Diseño,12,8,4,963.77,20.3,79,5,0,2,2.0,0,0,0,0
+SIM-0087,2026-07-31,Organización,Buscador,Durabilidad,5,0,5,419.51,30.6,29,3,0,2,4.0,0,1,1,0
+SIM-0088,2026-07-31,Cocina,Buscador,Durabilidad,6,3,3,633.39,22.2,58,2,0,0,4.0,1,1,0,0
+SIM-0089,2026-07-31,Organización,Redes sociales,Practicidad,5,1,4,277.85,18.3,21,5,0,2,4.0,0,1,0,0
+SIM-0090,2026-07-31,Cocina,Redes sociales,Diseño,1,0,1,478.28,15.3,84,9,2,3,3.0,0,1,1,0
+SIM-0091,2026-07-31,Decoración,Buscador,Practicidad,10,5,5,461.44,28.1,69,4,0,1,3.0,0,1,1,1
+SIM-0092,2026-07-31,Decoración,Redes sociales,Practicidad,1,0,1,408.34,17.8,31,5,1,3,3.0,0,0,1,0
+SIM-0093,2026-07-31,Organización,Recomendación,Precio,4,3,1,794.78,23.2,67,5,3,3,3.0,0,1,1,1
+SIM-0094,2026-07-31,Organización,Buscador,Precio,11,7,4,1200.7,30.9,96,9,3,3,5.0,1,0,1,1
+SIM-0095,2026-07-31,Organización,Recomendación,Durabilidad,9,5,4,1085.71,33.0,41,2,0,3,4.0,0,0,0,0
+SIM-0096,2026-07-31,Cocina,Buscador,Diseño,11,4,7,529.69,30.3,78,4,1,2,4.0,0,1,0,0
+SIM-0097,2026-07-31,Decoración,Buscador,Practicidad,6,3,3,425.37,20.4,12,11,2,0,4.0,1,0,1,0
+SIM-0098,2026-07-31,Decoración,Buscador,Diseño,12,0,12,595.22,24.0,13,3,1,0,4.0,0,1,1,0
+SIM-0099,2026-07-31,Cocina,Recomendación,Practicidad,10,5,5,505.83,15.5,40,8,1,2,3.0,0,1,1,0
+SIM-0100,2026-07-31,Cocina,Redes sociales,Precio,9,4,5,593.05,8.7,44,6,0,2,4.0,0,0,1,1
+SIM-0101,2026-07-31,Decoración,Redes sociales,Diseño,1,0,1,835.33,25.0,27,5,3,3,4.0,1,1,0,0
+SIM-0102,2026-07-31,Organización,Recomendación,Practicidad,8,5,3,224.66,17.3,42,6,1,0,5.0,0,1,1,0
+SIM-0103,2026-07-31,Organización,Recomendación,Durabilidad,11,3,8,618.07,26.3,42,3,0,1,4.0,0,1,1,0
+SIM-0104,2026-07-31,Decoración,Redes sociales,Practicidad,4,3,1,393.38,23.2,71,14,5,3,5.0,0,1,0,0
+SIM-0105,2026-07-31,Cocina,Recomendación,Practicidad,4,2,2,401.16,27.8,37,6,0,0,2.0,0,1,0,0
+SIM-0106,2026-07-31,Organización,Buscador,Durabilidad,1,0,1,404.35,17.8,21,4,0,1,4.0,0,1,0,0
+SIM-0107,2026-07-31,Cocina,Recomendación,Durabilidad,5,3,2,573.38,14.2,38,5,1,2,3.0,0,0,1,1
+SIM-0108,2026-07-31,Cocina,Recomendación,Practicidad,12,3,9,735.52,28.9,26,6,2,0,3.0,0,1,1,1
+SIM-0109,2026-07-31,Decoración,Redes sociales,Durabilidad,7,1,6,552.1,27.8,21,2,1,2,3.0,0,1,1,0
+SIM-0110,2026-07-31,Cocina,Recomendación,Practicidad,3,0,3,614.16,13.3,62,4,1,2,3.0,0,1,0,0
+SIM-0111,2026-07-31,Cocina,Redes sociales,,7,5,2,768.11,18.4,63,7,2,1,3.0,1,1,0,0
+SIM-0112,2026-07-31,Cocina,Redes sociales,,3,0,3,406.51,16.6,57,4,1,1,3.0,1,1,0,0
+SIM-0113,2026-07-31,Cocina,Redes sociales,,9,2,7,606.99,5.0,87,4,0,1,4.0,0,1,0,0
+SIM-0114,2026-07-31,Decoración,Recomendación,,9,3,6,607.09,15.7,39,3,0,0,3.0,0,1,1,1
+SIM-0115,2026-07-31,Decoración,Redes sociales,,8,3,5,1179.49,34.2,34,4,2,2,2.0,0,1,0,0
+SIM-0116,2026-07-31,Decoración,Buscador,,8,4,4,821.59,14.4,57,4,1,2,3.0,0,1,0,0
+SIM-0117,2026-07-31,Cocina,Redes sociales,,10,3,7,1022.07,32.3,30,7,3,2,2.0,0,1,0,0
+SIM-0118,2026-07-31,Decoración,Recomendación,,7,1,6,519.81,22.2,23,3,0,1,3.0,0,1,0,0
+SIM-0119,2026-07-31,Cocina,Redes sociales,Durabilidad,3,0,3,716.59,22.9,5,3,0,0,3.0,0,1,1,0
+SIM-0120,2026-07-31,Cocina,Redes sociales,Durabilidad,8,6,2,383.98,34.2,15,10,0,5,4.0,0,1,1,1
+SIM-0121,2026-07-31,Organización,Recomendación,Diseño,9,1,8,640.4,5.0,73,5,2,1,4.0,0,1,0,0
+SIM-0122,2026-07-31,Organización,Redes sociales,Diseño,2,1,1,771.55,23.8,35,8,0,1,3.0,0,0,0,0
+SIM-0123,2026-07-31,Decoración,Redes sociales,Durabilidad,3,1,2,1058.64,18.1,87,6,3,2,3.0,1,1,0,0
+SIM-0124,2026-07-31,Decoración,Buscador,Precio,6,0,6,685.93,24.2,117,0,0,1,3.0,0,0,1,1
+SIM-0125,2026-07-31,Organización,Buscador,Precio,3,0,3,597.77,30.0,10,1,0,2,3.0,0,1,0,0
+SIM-0126,2026-07-31,Decoración,Buscador,Precio,3,1,2,688.48,15.0,22,3,1,3,3.0,0,1,0,0
+SIM-0127,2026-07-31,Decoración,Recomendación,Durabilidad,1,0,1,592.85,12.1,33,3,0,2,3.0,0,1,0,0
+SIM-0128,2026-07-31,Organización,Redes sociales,Durabilidad,8,3,5,453.35,16.3,57,1,0,2,3.0,0,1,1,1
+SIM-0129,2026-07-31,Decoración,Redes sociales,Diseño,11,5,6,577.32,23.8,9,3,0,1,2.0,0,1,1,0
+SIM-0130,2026-07-31,Decoración,Buscador,Practicidad,1,0,1,469.38,33.8,22,5,1,0,5.0,0,1,0,0
+SIM-0131,2026-07-31,Organización,Recomendación,Precio,11,6,5,728.4,17.1,71,4,0,1,3.0,0,1,1,0
+SIM-0132,2026-07-31,Decoración,Buscador,Durabilidad,11,7,4,380.97,20.1,22,3,0,3,3.0,0,1,1,1
+SIM-0133,2026-07-31,Organización,Buscador,Precio,8,0,8,451.11,13.8,27,7,0,2,4.0,0,1,0,0
+SIM-0134,2026-07-31,Decoración,Recomendación,Precio,1,0,1,833.69,38.8,73,5,2,1,3.0,0,1,0,0
+SIM-0135,2026-07-31,Organización,Redes sociales,Durabilidad,7,4,3,517.14,15.8,78,6,1,0,3.0,0,0,0,0
+SIM-0136,2026-07-31,Decoración,Recomendación,Durabilidad,9,7,2,374.61,23.0,57,7,1,2,2.0,0,1,0,0
+SIM-0137,2026-07-31,Decoración,Buscador,Durabilidad,7,2,5,304.97,26.6,17,3,1,1,3.0,0,1,0,0
+SIM-0138,2026-07-31,Organización,Buscador,Diseño,2,0,2,1105.05,23.3,33,3,1,0,3.0,0,1,1,0
+SIM-0139,2026-07-31,Decoración,Redes sociales,Precio,1,0,1,490.09,20.4,33,1,0,0,2.0,0,1,0,0
+SIM-0140,2026-07-31,Decoración,Recomendación,Practicidad,5,1,4,631.66,33.4,52,1,0,1,3.0,0,1,1,1
+SIM-0141,2026-07-31,Decoración,Buscador,Practicidad,2,0,2,396.82,130.0,65,9,1,1,4.0,0,1,0,0
+SIM-0142,2026-07-31,Decoración,Buscador,Practicidad,2,1,1,721.03,-5.0,19,3,1,4,3.0,0,1,0,0
+SIM-0143,2026-07-31,Decoración,Redes sociales,Durabilidad,11,0,11,453.04,26.3,-10,2,0,1,3.0,0,1,0,0
+SIM-0144,2026-07-31,Decoración,Buscador,Practicidad,5,0,5,-200.0,23.4,68,2,0,1,4.0,0,1,0,0
+SIM-0145,2026-07-31,Organización,Redes sociales,Diseño,3,1,2,785.54,8.1,31,2,2,2,9.0,0,1,1,0
+SIM-0146,2026-07-31,Decoración,Redes sociales,Diseño,9,5,4,381.94,23.0,40,-3,1,2,4.0,0,1,1,1
+SIM-0147,2026-07-31,Cocina,Redes sociales,Practicidad,8,3,5,678.65,9.3,25,4,1,1,5.0,0,1,1,0
+SIM-0148,2026-07-31,Cocina,Recomendación,Diseño,9,2,7,797.83,9.0,45,7,0,0,2.0,0,1,1,1
+SIM-0149,2026-07-31,Decoración,Redes sociales,Durabilidad,5,2,3,773.24,26.0,33,8,1,1,4.0,0,0,0,0
+SIM-0150,2026-07-31,Organización,Buscador,Precio,11,3,8,434.77,38.2,40,6,2,1,5.0,0,1,1,0
+SIM-0151,2026-07-31,Decoración,Recomendación,Practicidad,8,5,3,580.75,27.8,56,7,3,2,5.0,0,0,1,1
+SIM-0152,2026-07-31,Organización,Buscador,Precio,10,9,1,336.84,27.7,43,6,1,1,4.0,0,1,0,0
+SIM-0153,2026-07-31,Decoración,Redes sociales,Precio,4,1,3,764.15,20.7,62,2,0,2,4.0,0,1,0,0
+SIM-0154,2026-07-31,Cocina,Recomendación,Durabilidad,1,0,1,518.74,23.5,43,4,1,3,3.0,0,1,0,0
+SIM-0155,2026-07-31,Decoración,Redes sociales,Durabilidad,11,5,6,874.97,19.6,16,4,1,4,3.0,0,1,0,0
+SIM-0156,2026-07-31,Cocina,Recomendación,Diseño,9,2,7,379.85,25.4,71,0,0,0,3.0,0,1,0,0
+SIM-0157,2026-07-31,Organización,Recomendación,Precio,10,0,10,596.33,17.1,115,8,0,1,4.0,0,1,0,0
+SIM-0158,2026-07-31,Organización,Redes sociales,Precio,11,7,4,566.12,28.5,15,6,0,2,3.0,0,0,1,1
+SIM-0159,2026-07-31,Cocina,Buscador,Diseño,1,0,1,458.8,20.9,46,5,2,3,4.0,1,1,0,0
+SIM-0160,2026-07-31,Organización,Recomendación,Durabilidad,5,2,3,444.61,20.1,84,8,1,2,4.0,0,0,0,0
+SIM-0161,2026-07-31,Cocina,Buscador,Durabilidad,2,1,1,540.25,24.2,27,8,0,3,3.0,0,1,0,0
+SIM-0162,2026-07-31,Decoración,Redes sociales,Practicidad,8,1,7,238.48,17.4,108,3,1,1,3.0,1,1,0,0
+SIM-0163,2026-07-31,Organización,Redes sociales,Durabilidad,4,3,1,861.67,20.1,57,4,1,0,4.0,0,0,1,0
+SIM-0164,2026-07-31,Decoración,Buscador,Practicidad,2,0,2,700.67,11.9,79,2,0,1,3.0,0,1,1,0
+SIM-0165,2026-07-31,Decoración,Recomendación,Durabilidad,2,0,2,450.93,23.2,6,1,1,1,4.0,0,1,0,0
+SIM-0166,2026-07-31,Cocina,Buscador,Practicidad,1,0,1,536.58,15.5,14,4,1,2,5.0,0,1,0,0
+SIM-0167,2026-07-31,Organización,Buscador,Diseño,3,0,3,492.68,33.4,47,4,2,3,3.0,0,1,1,0
+SIM-0168,2026-07-31,Organización,Redes sociales,Durabilidad,2,1,1,749.18,8.4,68,3,2,1,5.0,1,1,0,0
+SIM-0169,2026-07-31,Organización,Buscador,Practicidad,2,0,2,297.21,19.6,104,4,2,0,4.0,0,1,0,0
+SIM-0170,2026-07-31,Organización,Redes sociales,Precio,8,3,5,439.48,23.3,58,2,0,1,4.0,0,1,0,0
+SIM-0171,2026-07-31,Cocina,Recomendación,Precio,12,10,2,738.69,20.5,49,5,0,4,4.0,0,1,0,0
+SIM-0172,2026-07-31,Decoración,Buscador,Precio,11,10,1,1066.75,21.6,43,7,1,2,2.0,0,1,1,1
+SIM-0173,2026-07-31,Cocina,Recomendación,Durabilidad,4,1,3,901.72,12.9,72,7,2,2,5.0,0,1,1,0
+SIM-0174,2026-07-31,Decoración,Buscador,Diseño,10,0,10,455.26,15.5,27,2,1,1,3.0,0,1,0,0
+SIM-0175,2026-07-31,Organización,Redes sociales,Precio,8,4,4,760.21,11.6,123,6,3,3,1.0,0,1,0,0
+SIM-0176,2026-07-31,Organización,Buscador,Practicidad,5,1,4,944.87,24.6,16,0,0,0,2.0,0,1,0,0
+SIM-0177,2026-07-31,Cocina,Buscador,Precio,7,3,4,1281.49,19.4,53,6,1,1,3.0,0,1,1,0
+SIM-0178,2026-07-31,Organización,Redes sociales,Practicidad,9,6,3,518.22,21.9,188,8,1,3,3.0,0,1,1,1
+SIM-0179,2026-07-31,Decoración,Redes sociales,Diseño,7,2,5,814.58,21.5,120,6,1,1,4.0,0,1,1,0
+SIM-0180,2026-07-31,Organización,Buscador,Precio,4,2,2,696.71,15.9,47,4,3,4,4.0,0,1,1,0
+SIM-0181,2026-07-31,Decoración,Buscador,Diseño,9,2,7,363.87,35.2,33,1,0,3,2.0,0,1,0,0
+SIM-0182,2026-07-31,Decoración,Redes sociales,Diseño,2,1,1,1597.5,10.8,57,1,0,1,3.0,0,1,0,0
+SIM-0183,2026-07-31,Cocina,Redes sociales,Diseño,3,2,1,328.07,25.5,70,7,2,3,4.0,0,1,0,0
+SIM-0184,2026-07-31,Decoración,Redes sociales,Diseño,6,4,2,408.99,27.0,26,4,1,1,3.0,0,1,0,0
+SIM-0185,2026-07-31,Decoración,Redes sociales,Precio,4,1,3,574.85,21.0,34,4,0,1,4.0,0,1,0,0
+SIM-0186,2026-07-31,Cocina,Buscador,Practicidad,11,6,5,497.73,17.8,53,5,2,3,3.0,0,1,1,1
+SIM-0187,2026-07-31,Cocina,Recomendación,Precio,3,1,2,742.17,14.8,30,10,5,1,3.0,0,1,0,0
+SIM-0188,2026-07-31,Decoración,Redes sociales,Diseño,6,3,3,310.64,9.9,21,5,1,2,1.0,0,1,0,0
+SIM-0189,2026-07-31,Decoración,Redes sociales,Durabilidad,8,5,3,1141.93,38.4,25,2,0,0,4.0,0,1,0,0
+SIM-0190,2026-07-31,Decoración,Buscador,Diseño,9,0,9,285.01,20.5,38,0,0,0,2.0,0,1,0,0
+SIM-0191,2026-07-31,Organización,Buscador,Durabilidad,8,4,4,709.51,28.0,74,6,0,1,4.0,0,1,1,1
+SIM-0192,2026-07-31,Organización,Recomendación,Durabilidad,6,2,4,422.12,24.1,19,3,1,2,5.0,0,0,1,0
+SIM-0193,2026-07-31,Cocina,Redes sociales,Diseño,9,4,5,335.87,18.6,166,4,0,1,4.0,1,1,0,0
+SIM-0194,2026-07-31,Decoración,Redes sociales,Practicidad,11,9,2,450.46,10.8,21,7,1,1,3.0,0,1,0,0
+SIM-0195,2026-07-31,Organización,Buscador,Precio,10,9,1,564.92,27.1,27,7,0,5,3.0,1,1,1,1
+SIM-0196,2026-07-31,Decoración,Buscador,Precio,11,10,1,447.03,20.7,19,11,2,3,5.0,0,1,1,0
+SIM-0197,2026-07-31,Organización,Buscador,Practicidad,1,0,1,1499.95,24.2,126,7,0,3,3.0,0,1,0,0
+SIM-0198,2026-07-31,Cocina,Buscador,Practicidad,1,0,1,892.04,29.4,40,6,1,3,1.0,1,1,0,0
+SIM-0199,2026-07-31,Decoración,Redes sociales,Durabilidad,8,0,8,688.89,5.0,108,0,0,2,5.0,0,1,0,0
+SIM-0200,2026-07-31,Cocina,Redes sociales,Durabilidad,4,0,4,1325.15,29.6,4,4,1,1,3.0,0,1,0,0
+SIM-0201,2026-07-31,Decoración,Recomendación,Diseño,3,0,3,609.9,24.1,60,3,2,0,4.0,0,1,0,0
+SIM-0202,2026-07-31,Cocina,Recomendación,Practicidad,3,2,1,494.8,13.1,5,7,0,3,3.0,0,1,0,0
+SIM-0203,2026-07-31,Cocina,Recomendación,Diseño,8,4,4,538.88,28.6,39,1,0,1,4.0,0,1,1,1
+SIM-0204,2026-07-31,Organización,Buscador,Durabilidad,5,2,3,374.74,15.3,13,7,2,2,5.0,0,1,1,1
+SIM-0205,2026-07-31,Decoración,Buscador,Practicidad,7,2,5,571.87,26.2,37,10,2,1,3.0,0,1,1,0
+SIM-0206,2026-07-31,Organización,Recomendación,Practicidad,4,3,1,501.73,19.2,64,6,1,4,3.0,0,1,0,0
+SIM-0207,2026-07-31,Organización,Recomendación,Diseño,3,2,1,629.61,17.1,78,6,0,1,3.0,0,1,0,0
+SIM-0208,2026-07-31,Cocina,Buscador,Durabilidad,12,1,11,527.34,17.1,51,1,0,0,5.0,0,1,0,0
+SIM-0209,2026-07-31,Decoración,Recomendación,Precio,11,9,2,437.16,32.5,82,5,3,0,4.0,0,0,1,0
+SIM-0210,2026-07-31,Cocina,Buscador,Durabilidad,6,2,4,426.07,29.0,16,6,0,2,2.0,0,1,1,0
+SIM-0211,2026-07-31,Organización,Redes sociales,Diseño,11,4,7,274.47,14.6,68,2,0,0,2.0,0,0,0,0
+SIM-0212,2026-07-31,Cocina,Redes sociales,Practicidad,1,0,1,748.15,22.2,41,3,2,3,4.0,0,1,0,0
+SIM-0213,2026-07-31,Organización,Buscador,Durabilidad,11,8,3,279.19,33.5,86,5,2,3,4.0,0,1,1,0
+SIM-0214,2026-07-31,Cocina,Buscador,Practicidad,2,1,1,572.89,12.1,79,5,1,2,2.0,0,0,1,0
+SIM-0215,2026-07-31,Cocina,Buscador,Precio,10,8,2,896.57,21.6,100,11,6,2,4.0,0,1,1,0
+SIM-0216,2026-07-31,Organización,Recomendación,Durabilidad,3,2,1,945.15,15.0,47,8,2,2,3.0,0,1,0,0
+SIM-0217,2026-07-31,Organización,Buscador,Diseño,12,2,10,639.82,31.6,36,3,1,0,3.0,0,0,1,1
+SIM-0218,2026-07-31,Cocina,Recomendación,Durabilidad,8,3,5,526.37,24.2,64,8,2,2,5.0,0,1,1,0
+SIM-0219,2026-07-31,Organización,Buscador,Diseño,8,3,5,570.5,19.6,77,4,2,1,5.0,0,1,0,0
+SIM-0220,2026-07-31,Organización,Redes sociales,Durabilidad,12,9,3,627.65,26.1,47,10,4,1,3.0,0,1,1,0
+SIM-0221,2026-07-31,Cocina,Buscador,Diseño,6,4,2,837.47,15.6,28,4,0,4,4.0,0,0,1,0
+SIM-0222,2026-07-31,Decoración,Recomendación,Diseño,4,3,1,556.88,22.1,51,4,3,2,4.0,0,1,1,1
+SIM-0223,2026-07-31,Decoración,Redes sociales,Diseño,4,1,3,524.34,23.8,29,5,1,2,4.0,0,1,1,0
+SIM-0224,2026-07-31,Cocina,Buscador,Durabilidad,11,1,10,648.93,23.3,113,6,0,3,4.0,0,1,1,0
+SIM-0225,2026-07-31,Organización,Buscador,Durabilidad,2,1,1,545.22,18.3,27,3,0,3,5.0,0,1,1,1
+SIM-0226,2026-07-31,Cocina,Recomendación,Diseño,7,3,4,460.81,12.3,45,4,0,2,3.0,0,1,0,0
+SIM-0227,2026-07-31,Decoración,Recomendación,Diseño,1,0,1,644.66,28.1,36,10,4,3,2.0,1,1,1,0
+SIM-0228,2026-07-31,Decoración,Redes sociales,Practicidad,11,2,9,266.4,28.8,25,2,0,1,5.0,0,1,0,0
+SIM-0229,2026-07-31,Organización,Recomendación,Practicidad,10,7,3,1115.09,17.2,110,7,0,0,3.0,0,1,0,0
+SIM-0230,2026-07-31,Organización,Redes sociales,Practicidad,12,8,4,364.61,13.5,12,5,3,1,4.0,0,1,1,1
+SIM-0231,2026-07-31,Decoración,Redes sociales,Precio,9,7,2,463.99,33.4,17,3,0,1,2.0,0,0,1,0
+SIM-0232,2026-07-31,Cocina,Buscador,Durabilidad,12,9,3,614.87,20.8,48,4,1,2,4.0,1,0,1,1
+SIM-0233,2026-07-31,Decoración,Recomendación,Precio,3,2,1,826.5,27.2,39,1,0,0,4.0,0,1,1,0
+SIM-0234,2026-07-31,Organización,Buscador,Precio,9,8,1,666.06,20.4,10,10,2,3,3.0,0,1,1,1
+SIM-0235,2026-07-31,Organización,Recomendación,Practicidad,2,1,1,836.58,24.7,38,3,1,3,4.0,0,1,1,0
+SIM-0236,2026-07-31,Decoración,Recomendación,Practicidad,3,2,1,357.38,9.4,58,4,0,0,5.0,0,1,0,0
+SIM-0237,2026-07-31,Cocina,Redes sociales,Practicidad,9,5,4,1388.83,24.2,69,6,0,2,5.0,0,1,0,0
+SIM-0238,2026-07-31,Organización,Redes sociales,Precio,2,1,1,641.56,20.3,23,6,0,4,2.0,0,1,1,1
+SIM-0239,2026-07-31,Decoración,Recomendación,Precio,1,0,1,536.64,16.0,34,7,4,1,3.0,0,1,0,0
+SIM-0240,2026-07-31,Decoración,Redes sociales,Precio,6,4,2,603.47,21.6,164,5,0,1,2.0,0,1,0,0
+SIM-0241,2026-07-31,Organización,Buscador,Diseño,3,0,3,646.8,25.4,35,2,0,1,3.0,0,1,1,1
+SIM-0242,2026-07-31,Cocina,Redes sociales,Durabilidad,11,2,9,548.45,16.6,71,2,0,0,4.0,0,1,0,0
+SIM-0243,2026-07-31,Cocina,Buscador,Diseño,7,5,2,486.44,23.8,25,3,1,2,4.0,0,0,1,1
+SIM-0244,2026-07-31,Organización,Recomendación,Precio,11,7,4,565.54,14.7,26,5,0,0,2.0,0,1,1,1
+SIM-0245,2026-07-31,Organización,Redes sociales,Diseño,3,2,1,596.47,15.2,34,6,3,2,2.0,0,1,0,0
+SIM-0246,2026-07-31,Decoración,Redes sociales,Practicidad,3,2,1,326.82,19.0,43,4,2,0,4.0,0,1,0,0
+SIM-0247,2026-07-31,Organización,Recomendación,Durabilidad,11,7,4,528.87,19.2,67,6,3,0,2.0,0,1,1,0
+SIM-0248,2026-07-31,Decoración,Buscador,Precio,7,4,3,961.07,5.0,55,5,1,1,5.0,0,1,1,0
+SIM-0249,2026-07-31,Cocina,Redes sociales,Precio,7,2,5,373.55,14.7,27,2,0,2,4.0,0,1,0,0
+SIM-0250,2026-07-31,Cocina,Redes sociales,Precio,2,1,1,628.92,23.9,16,6,3,0,3.0,0,1,0,0
+SIM-0251,2026-07-31,Decoración,Redes sociales,Diseño,12,4,8,553.58,22.2,165,5,1,2,4.0,0,1,0,0
+SIM-0252,2026-07-31,Organización,Redes sociales,Diseño,2,1,1,526.58,28.0,43,7,2,2,3.0,0,1,0,0
+SIM-0253,2026-07-31,Organización,Recomendación,Durabilidad,2,0,2,476.6,24.5,24,8,2,1,4.0,0,1,0,0
+SIM-0254,2026-07-31,Cocina,Buscador,Diseño,5,2,3,909.17,22.7,9,5,2,0,2.0,0,1,0,0
+SIM-0255,2026-07-31,Cocina,Recomendación,Durabilidad,12,5,7,490.67,27.1,35,4,2,1,4.0,0,1,1,0
+SIM-0256,2026-07-31,Decoración,Redes sociales,Diseño,2,1,1,593.51,13.4,24,9,3,3,5.0,0,1,1,0
+SIM-0257,2026-07-31,Cocina,Buscador,Durabilidad,11,4,7,815.04,19.9,81,3,2,2,4.0,0,1,0,0
+SIM-0258,2026-07-31,Cocina,Redes sociales,Durabilidad,7,5,2,760.8,25.8,71,10,2,1,4.0,0,1,1,0
+SIM-0259,2026-07-31,Decoración,Recomendación,Practicidad,8,6,2,484.39,21.6,24,8,1,3,3.0,0,1,1,1
+SIM-0260,2026-07-31,Cocina,Recomendación,Precio,12,11,1,569.36,26.2,29,9,2,2,3.0,0,1,1,1
+SIM-0261,2026-07-31,Decoración,Recomendación,Diseño,12,3,9,822.05,26.7,29,3,0,2,4.0,0,1,1,0
+SIM-0262,2026-07-31,Organización,Recomendación,Precio,4,1,3,1007.68,28.2,93,5,0,2,5.0,0,1,0,0
+SIM-0263,2026-07-31,Decoración,Redes sociales,Diseño,6,1,5,559.66,17.2,44,3,0,1,4.0,1,0,0,0
+SIM-0264,2026-07-31,Cocina,Buscador,Precio,9,5,4,642.35,24.3,9,4,1,1,2.0,0,1,0,0
+SIM-0265,2026-07-31,Cocina,Redes sociales,Durabilidad,1,0,1,595.52,31.5,132,9,5,2,3.0,0,1,0,0
+SIM-0266,2026-07-31,Decoración,Redes sociales,Precio,2,1,1,597.43,16.2,52,4,1,1,3.0,0,1,0,0
+SIM-0267,2026-07-31,Organización,Redes sociales,Diseño,10,5,5,1066.23,23.8,8,2,1,1,4.0,0,1,1,1
+SIM-0268,2026-07-31,Cocina,Recomendación,Practicidad,8,3,5,376.13,16.9,87,5,2,1,4.0,0,0,0,0
+SIM-0269,2026-07-31,Decoración,Buscador,Diseño,3,0,3,580.32,17.3,7,4,1,0,5.0,0,0,1,0
+SIM-0270,2026-07-31,Cocina,Recomendación,Durabilidad,7,4,3,945.88,18.4,24,5,1,1,1.0,0,0,1,1
+SIM-0271,2026-07-31,Organización,Buscador,Durabilidad,10,9,1,444.78,28.0,72,16,2,2,5.0,0,1,1,1
+SIM-0272,2026-07-31,Organización,Redes sociales,Diseño,10,3,7,802.76,25.3,172,5,2,2,3.0,0,0,0,0
+SIM-0273,2026-07-31,Decoración,Buscador,Practicidad,3,1,2,292.24,23.6,44,13,4,4,4.0,0,0,0,0
+SIM-0274,2026-07-31,Decoración,Buscador,Diseño,10,2,8,758.21,35.9,37,4,0,1,4.0,0,1,0,0
+SIM-0275,2026-07-31,Decoración,Recomendación,Practicidad,12,0,12,838.99,11.6,70,1,1,0,4.0,0,1,1,1
+SIM-0276,2026-07-31,Decoración,Redes sociales,Durabilidad,3,0,3,264.13,17.1,23,7,1,2,3.0,0,1,1,1
+SIM-0277,2026-07-31,Organización,Redes sociales,Durabilidad,6,1,5,659.02,26.1,46,6,1,1,3.0,0,1,1,0
+SIM-0278,2026-07-31,Decoración,Recomendación,Precio,9,5,4,545.41,18.8,11,5,1,3,5.0,0,1,1,1
+SIM-0279,2026-07-31,Decoración,Buscador,Practicidad,1,0,1,668.02,23.3,63,7,1,2,2.0,0,0,1,0
+SIM-0280,2026-07-31,Cocina,Recomendación,Durabilidad,5,3,2,805.52,34.6,106,5,2,1,4.0,0,1,0,0
+SIM-0281,2026-07-31,Cocina,Buscador,Durabilidad,5,0,5,1369.63,15.9,54,1,0,1,4.0,0,1,1,0
+SIM-0282,2026-07-31,Organización,Recomendación,Diseño,7,2,5,691.08,18.0,59,6,2,1,3.0,0,0,1,0
+SIM-0283,2026-07-31,Organización,Recomendación,Precio,5,1,4,362.48,28.4,24,3,0,0,3.0,1,0,0,0
+SIM-0284,2026-07-31,Organización,Buscador,Durabilidad,7,2,5,555.76,33.0,65,3,2,1,3.0,0,1,0,0
+SIM-0285,2026-07-31,Decoración,Recomendación,Durabilidad,11,5,6,323.12,14.7,171,3,0,2,4.0,0,1,1,0
+SIM-0286,2026-07-31,Decoración,Redes sociales,Precio,5,3,2,617.21,28.5,17,4,0,2,4.0,0,0,1,0
+SIM-0287,2026-07-31,Cocina,Recomendación,Precio,12,8,4,620.09,23.1,46,9,3,1,5.0,1,1,1,1
+SIM-0288,2026-07-31,Organización,Redes sociales,Diseño,6,4,2,665.02,11.0,36,12,2,3,3.0,0,1,1,0
+SIM-0289,2026-07-31,Cocina,Recomendación,Precio,12,9,3,981.36,26.0,126,7,2,1,3.0,0,1,1,1
+SIM-0290,2026-07-31,Decoración,Buscador,Practicidad,2,0,2,189.24,20.0,44,1,0,2,4.0,0,0,0,0
+SIM-0291,2026-07-31,Cocina,Buscador,Precio,10,9,1,416.23,22.4,12,4,1,3,3.0,1,1,1,1
+SIM-0292,2026-07-31,Decoración,Redes sociales,Practicidad,12,7,5,547.86,19.1,103,3,1,1,3.0,0,1,1,0
+SIM-0293,2026-07-31,Organización,Buscador,Durabilidad,2,1,1,733.04,19.4,67,4,0,2,4.0,0,1,1,1
+SIM-0294,2026-07-31,Organización,Redes sociales,Precio,11,6,5,941.05,21.0,95,6,1,1,5.0,1,1,1,0
+SIM-0295,2026-07-31,Organización,Redes sociales,Precio,5,0,5,504.7,32.0,79,3,2,0,3.0,0,1,0,0
+SIM-0296,2026-07-31,Decoración,Recomendación,Diseño,10,1,9,499.5,27.8,36,3,1,0,3.0,0,1,0,0
+SIM-0297,2026-07-31,Organización,Recomendación,Diseño,11,6,5,608.44,28.1,39,4,0,3,4.0,0,1,1,1
+SIM-0298,2026-07-31,Organización,Buscador,Practicidad,9,6,3,544.5,27.1,83,6,1,1,5.0,0,1,0,0
+SIM-0299,2026-07-31,Cocina,Redes sociales,Durabilidad,11,4,7,470.9,34.2,77,6,0,3,3.0,0,1,1,0
+SIM-0300,2026-07-31,Organización,Recomendación,Diseño,11,8,3,804.64,29.3,49,7,2,1,4.0,1,1,1,1
+SIM-0301,2026-07-31,Organización,Recomendación,Durabilidad,9,1,8,950.21,29.9,48,4,1,2,4.0,0,0,1,0
+SIM-0302,2026-07-31,Cocina,Redes sociales,Practicidad,1,0,1,971.83,21.7,47,6,2,1,2.0,1,1,0,0
+SIM-0303,2026-07-31,Organización,Redes sociales,Precio,6,2,4,509.6,27.6,95,2,0,1,2.0,0,0,0,0
+SIM-0304,2026-07-31,Cocina,Recomendación,Diseño,11,9,2,303.1,18.7,100,7,1,2,4.0,0,1,1,1
+SIM-0305,2026-07-31,Cocina,Recomendación,Diseño,4,3,1,641.23,26.6,63,6,0,2,4.0,0,0,1,1
+SIM-0306,2026-07-31,Organización,Buscador,Durabilidad,2,0,2,922.62,29.0,161,7,2,2,5.0,1,0,0,0
+SIM-0307,2026-07-31,Cocina,Recomendación,Diseño,3,1,2,649.82,22.2,86,1,0,1,4.0,0,1,0,0
+SIM-0308,2026-07-31,Organización,Buscador,Practicidad,11,3,8,885.67,21.6,20,4,2,3,2.0,0,1,1,0
+SIM-0309,2026-07-31,Cocina,Recomendación,Practicidad,1,0,1,690.16,31.1,76,10,2,2,3.0,0,1,0,0
+SIM-0310,2026-07-31,Cocina,Recomendación,Diseño,11,2,9,455.27,16.6,5,1,0,1,4.0,0,1,1,0
+SIM-0311,2026-07-31,Organización,Recomendación,Durabilidad,3,0,3,430.87,26.5,62,8,2,0,4.0,0,1,0,0
+SIM-0312,2026-07-31,Organización,Recomendación,Precio,2,0,2,679.91,26.3,41,2,1,2,2.0,0,1,0,0
+SIM-0313,2026-07-31,Decoración,Buscador,Precio,11,5,6,242.31,24.8,50,5,3,3,4.0,0,0,1,1
+SIM-0314,2026-07-31,Cocina,Buscador,Precio,9,4,5,421.18,12.7,105,7,3,4,3.0,0,1,1,0
+SIM-0315,2026-07-31,Organización,Redes sociales,Durabilidad,11,5,6,580.2,25.0,45,9,0,1,5.0,0,0,1,0
+SIM-0316,2026-07-31,Cocina,Redes sociales,Precio,2,0,2,544.08,18.5,18,2,0,1,5.0,0,1,0,0
+SIM-0317,2026-07-31,Organización,Buscador,Precio,10,6,4,821.15,13.2,48,7,2,3,4.0,0,1,1,0
+SIM-0318,2026-07-31,Decoración,Redes sociales,Precio,9,1,8,316.67,24.9,46,2,1,1,3.0,0,1,1,0
+SIM-0319,2026-07-31,Organización,Recomendación,Practicidad,7,4,3,952.32,6.0,9,2,0,3,4.0,0,1,1,1
+SIM-0320,2026-07-31,Organización,Redes sociales,Diseño,3,1,2,388.11,25.2,68,2,1,1,1.0,0,1,1,0
+SIM-0321,2026-07-31,Organización,Buscador,Precio,7,2,5,413.13,17.8,55,1,0,2,3.0,0,1,1,0
+SIM-0322,2026-07-31,Cocina,Buscador,Durabilidad,3,1,2,538.33,20.3,85,2,1,0,2.0,0,0,0,0
+SIM-0323,2026-07-31,Decoración,Redes sociales,Precio,8,0,8,417.3,33.3,5,3,1,2,5.0,0,1,1,0
+SIM-0324,2026-07-31,Organización,Buscador,Durabilidad,4,1,3,1095.21,18.3,66,8,1,1,3.0,0,1,0,0
+SIM-0325,2026-07-31,Decoración,Buscador,Durabilidad,5,2,3,605.64,24.8,65,8,3,2,3.0,0,1,0,0
+SIM-0326,2026-07-31,Cocina,Buscador,Durabilidad,6,0,6,804.99,10.1,122,7,1,3,3.0,0,1,0,0
+SIM-0327,2026-07-31,Organización,Redes sociales,Precio,10,7,3,392.02,21.8,62,6,2,2,4.0,0,0,1,1
+SIM-0328,2026-07-31,Cocina,Redes sociales,Precio,4,2,2,570.52,5.0,68,8,3,1,4.0,0,1,1,1
+SIM-0329,2026-07-31,Cocina,Buscador,Precio,8,2,6,420.39,16.2,66,1,0,1,4.0,0,1,0,0
+SIM-0330,2026-07-31,Organización,Recomendación,Precio,2,0,2,894.58,16.9,45,3,0,1,2.0,0,0,0,0
+SIM-0331,2026-07-31,Decoración,Buscador,Durabilidad,5,3,2,831.07,13.5,35,8,0,3,4.0,0,0,1,1
+SIM-0332,2026-07-31,Cocina,Buscador,Practicidad,4,3,1,386.72,17.9,107,5,1,3,3.0,0,1,0,0
+SIM-0333,2026-07-31,Organización,Buscador,Precio,2,0,2,1123.11,24.8,66,8,2,3,4.0,0,1,1,0
+SIM-0334,2026-07-31,Decoración,Redes sociales,Precio,12,8,4,528.83,32.7,16,10,2,2,3.0,0,0,1,1
+SIM-0335,2026-07-31,Cocina,Redes sociales,Diseño,7,4,3,630.08,22.0,47,4,2,1,4.0,0,1,1,1
+SIM-0336,2026-07-31,Organización,Buscador,Diseño,5,1,4,2019.93,21.1,51,3,0,1,2.0,0,1,0,0
+SIM-0337,2026-07-31,Cocina,Buscador,Practicidad,7,5,2,439.11,12.2,54,5,0,4,4.0,0,1,1,0
+SIM-0338,2026-07-31,Organización,Redes sociales,Practicidad,3,1,2,586.05,24.0,7,5,1,2,3.0,0,1,0,0
+SIM-0339,2026-07-31,Organización,Recomendación,Practicidad,12,3,9,401.72,26.3,52,2,1,2,5.0,0,1,1,1
+SIM-0340,2026-07-31,Cocina,Buscador,Practicidad,9,7,2,389.16,17.1,20,8,3,3,4.0,0,1,1,1
+SIM-0341,2026-07-31,Decoración,Buscador,Practicidad,1,0,1,895.2,28.7,35,5,1,1,3.0,0,1,0,0
+SIM-0342,2026-07-31,Organización,Redes sociales,Durabilidad,10,2,8,668.05,28.7,29,1,0,0,3.0,0,1,0,0
+SIM-0343,2026-07-31,Organización,Recomendación,Durabilidad,1,0,1,768.86,21.3,34,4,2,1,3.0,0,1,1,0
+SIM-0344,2026-07-31,Organización,Buscador,Durabilidad,3,1,2,722.83,12.7,100,5,2,2,4.0,0,1,1,1
+SIM-0345,2026-07-31,Cocina,Recomendación,Durabilidad,3,0,3,828.45,19.2,36,8,3,0,4.0,0,0,0,0
+SIM-0346,2026-07-31,Cocina,Recomendación,Practicidad,9,8,1,958.26,24.2,32,9,1,1,4.0,0,1,1,1
+SIM-0347,2026-07-31,Decoración,Redes sociales,Practicidad,7,1,6,1506.14,19.4,78,5,1,3,3.0,0,0,0,0
+SIM-0348,2026-07-31,Organización,Buscador,Durabilidad,6,5,1,1151.67,20.1,34,7,2,2,5.0,0,1,1,1
+SIM-0349,2026-07-31,Organización,Redes sociales,Durabilidad,11,1,10,538.65,20.8,6,4,1,1,4.0,0,1,1,1
+SIM-0350,2026-07-31,Cocina,Recomendación,Precio,10,5,5,676.81,15.6,104,7,1,0,5.0,0,1,0,0
+SIM-0351,2026-07-31,Cocina,Redes sociales,Diseño,12,5,7,321.76,28.8,44,4,0,1,4.0,0,1,1,0
+SIM-0352,2026-07-31,Organización,Recomendación,Diseño,12,6,6,708.18,13.2,28,3,1,0,4.0,0,1,1,0
+SIM-0353,2026-07-31,Cocina,Recomendación,Durabilidad,11,1,10,537.01,19.7,24,3,1,1,4.0,1,1,0,0
+SIM-0354,2026-07-31,Decoración,Redes sociales,Durabilidad,3,1,2,368.26,36.1,52,8,3,1,4.0,0,0,0,0
+SIM-0355,2026-07-31,Organización,Redes sociales,Practicidad,4,1,3,953.57,23.2,36,6,2,1,3.0,0,1,0,0
+SIM-0356,2026-07-31,Cocina,Recomendación,Durabilidad,2,1,1,387.4,23.6,40,5,2,0,3.0,0,0,0,0
+SIM-0357,2026-07-31,Cocina,Buscador,Diseño,3,1,2,573.32,15.9,39,6,0,2,5.0,1,1,0,0
+SIM-0358,2026-07-31,Organización,Recomendación,Precio,1,0,1,473.28,11.9,21,2,0,4,2.0,0,1,0,0
+SIM-0359,2026-07-31,Cocina,Buscador,Durabilidad,5,1,4,315.39,35.0,11,3,2,0,3.0,0,1,0,0
+SIM-0360,2026-07-31,Cocina,Redes sociales,Precio,3,1,2,796.14,7.1,23,3,2,1,3.0,0,1,1,0
+SIM-0361,2026-07-31,Cocina,Recomendación,Practicidad,5,3,2,532.18,31.7,94,9,1,2,3.0,0,1,0,0
+SIM-0362,2026-07-31,Organización,Recomendación,Durabilidad,12,5,7,391.26,27.2,36,6,1,1,4.0,0,1,1,0
+SIM-0363,2026-07-31,Cocina,Redes sociales,Practicidad,3,1,2,734.74,12.1,69,2,1,2,3.0,1,0,0,0
+SIM-0364,2026-07-31,Cocina,Redes sociales,Practicidad,10,7,3,397.27,28.4,111,4,0,4,2.0,0,1,1,0
+SIM-0365,2026-07-31,Decoración,Buscador,Durabilidad,8,3,5,654.29,23.9,16,2,2,0,4.0,0,1,1,1
+SIM-0366,2026-07-31,Cocina,Redes sociales,Diseño,12,2,10,236.51,18.8,27,1,0,0,3.0,0,1,0,0
+SIM-0367,2026-07-31,Organización,Redes sociales,Durabilidad,6,4,2,975.47,33.0,29,5,0,2,4.0,0,1,0,0
+SIM-0368,2026-07-31,Cocina,Buscador,Practicidad,11,6,5,338.07,20.2,3,11,1,3,2.0,0,1,1,1
+SIM-0369,2026-07-31,Decoración,Recomendación,Diseño,4,2,2,428.43,28.1,49,9,3,1,3.0,0,0,1,1
+SIM-0370,2026-07-31,Decoración,Redes sociales,Practicidad,12,8,4,265.33,35.7,65,8,3,2,4.0,1,1,1,0
+SIM-0371,2026-07-31,Organización,Recomendación,Durabilidad,1,0,1,550.41,18.3,63,2,0,1,5.0,0,1,1,0
+SIM-0372,2026-07-31,Organización,Buscador,Durabilidad,4,1,3,782.3,31.1,26,1,1,1,3.0,0,0,0,0
+SIM-0373,2026-07-31,Cocina,Redes sociales,Durabilidad,9,8,1,447.52,24.8,17,7,2,2,2.0,0,1,1,1
+SIM-0374,2026-07-31,Cocina,Recomendación,Precio,3,1,2,830.86,28.0,26,8,2,2,4.0,0,1,0,0
+SIM-0375,2026-07-31,Decoración,Buscador,Practicidad,1,0,1,813.59,27.1,107,5,1,0,5.0,0,1,0,0
+SIM-0376,2026-07-31,Cocina,Buscador,Precio,4,3,1,529.06,26.5,19,6,2,2,3.0,0,0,0,0
+SIM-0377,2026-07-31,Cocina,Buscador,Practicidad,3,0,3,691.4,13.6,113,2,0,2,4.0,0,1,0,0
+SIM-0378,2026-07-31,Organización,Recomendación,Diseño,6,3,3,476.71,23.4,26,12,4,2,3.0,0,0,0,0
+SIM-0379,2026-07-31,Cocina,Redes sociales,Durabilidad,6,5,1,614.78,14.2,18,9,5,1,3.0,0,1,1,1
+SIM-0380,2026-07-31,Cocina,Redes sociales,Diseño,9,6,3,732.79,40.8,36,12,2,2,5.0,0,1,1,0
+SIM-0381,2026-07-31,Organización,Recomendación,Practicidad,6,1,5,481.95,16.8,21,9,2,1,2.0,1,1,1,1
+SIM-0382,2026-07-31,Cocina,Buscador,Diseño,1,0,1,615.13,25.9,59,1,0,2,3.0,0,1,0,0
+SIM-0383,2026-07-31,Organización,Recomendación,Precio,7,4,3,478.22,29.7,60,12,1,0,3.0,0,1,0,0
+SIM-0384,2026-07-31,Decoración,Buscador,Practicidad,12,11,1,779.34,15.4,28,6,0,1,4.0,1,1,1,0
+SIM-0385,2026-07-31,Organización,Redes sociales,Durabilidad,12,3,9,570.48,21.4,24,3,0,4,4.0,0,1,1,1
+SIM-0386,2026-07-31,Decoración,Redes sociales,Diseño,10,5,5,1148.97,25.6,44,3,1,2,4.0,0,1,1,1
+SIM-0387,2026-07-31,Decoración,Redes sociales,Precio,3,1,2,367.43,15.3,44,4,1,0,3.0,0,1,1,0
+SIM-0388,2026-07-31,Cocina,Buscador,Diseño,9,0,9,777.59,27.8,71,1,1,0,4.0,0,1,0,0
+SIM-0389,2026-07-31,Cocina,Buscador,Precio,9,7,2,543.22,17.2,20,4,0,2,5.0,0,0,1,0
+SIM-0390,2026-07-31,Cocina,Recomendación,Diseño,8,5,3,434.88,22.9,14,6,0,1,5.0,0,1,1,1
+SIM-0391,2026-07-31,Decoración,Redes sociales,Diseño,4,1,3,521.36,23.6,13,2,1,1,2.0,0,1,0,0
+SIM-0392,2026-07-31,Organización,Redes sociales,Practicidad,5,1,4,584.55,15.6,21,3,1,1,4.0,0,1,0,0
+SIM-0393,2026-07-31,Organización,Recomendación,Durabilidad,6,3,3,596.24,17.1,79,5,3,1,2.0,0,1,1,1
+SIM-0394,2026-07-31,Cocina,Redes sociales,Diseño,1,0,1,495.03,22.3,114,3,0,4,3.0,0,1,0,0
+SIM-0395,2026-07-31,Decoración,Buscador,Precio,8,4,4,963.27,37.3,79,4,2,2,4.0,0,1,1,0
+SIM-0396,2026-07-31,Decoración,Buscador,Precio,7,3,4,536.72,26.6,17,7,1,1,3.0,0,1,0,0
+SIM-0397,2026-07-31,Decoración,Redes sociales,Practicidad,4,1,3,586.23,7.1,64,1,0,3,3.0,0,1,0,0
+SIM-0398,2026-07-31,Organización,Redes sociales,Practicidad,9,5,4,245.53,35.5,67,6,3,2,4.0,1,1,0,0
+SIM-0399,2026-07-31,Decoración,Buscador,Durabilidad,7,4,3,885.44,39.4,24,6,1,2,3.0,0,1,1,0
+SIM-0400,2026-07-31,Decoración,Recomendación,Diseño,9,5,4,1113.58,35.2,24,3,1,2,3.0,1,1,0,0
+SIM-0401,2026-07-31,Organización,Redes sociales,Diseño,8,3,5,922.27,25.9,39,1,0,2,4.0,0,1,1,0
+SIM-0402,2026-07-31,Organización,Buscador,Practicidad,5,3,2,263.38,16.1,28,8,2,3,5.0,0,1,1,0
+SIM-0403,2026-07-31,Organización,Buscador,Durabilidad,3,1,2,472.42,20.8,46,2,0,1,3.0,1,1,1,1
+SIM-0404,2026-07-31,Decoración,Buscador,Practicidad,10,4,6,537.29,25.1,43,7,3,2,3.0,0,0,1,1
+SIM-0405,2026-07-31,Cocina,Recomendación,Precio,9,1,8,623.69,28.6,48,4,0,0,4.0,0,0,1,1
+SIM-0406,2026-07-31,Cocina,Buscador,Precio,10,7,3,706.9,27.0,27,6,0,2,3.0,0,1,0,0
+SIM-0407,2026-07-31,Cocina,Buscador,Durabilidad,2,0,2,594.08,34.9,55,3,1,0,4.0,0,1,0,0
+SIM-0408,2026-07-31,Decoración,Redes sociales,Durabilidad,5,2,3,1086.22,27.3,115,4,1,2,3.0,0,1,0,0
+SIM-0409,2026-07-31,Decoración,Recomendación,Durabilidad,1,0,1,1001.9,23.6,28,2,0,2,4.0,0,1,0,0
+SIM-0410,2026-07-31,Cocina,Redes sociales,Practicidad,7,2,5,1491.7,24.0,62,5,1,1,4.0,0,1,1,1
+SIM-0411,2026-07-31,Organización,Recomendación,Precio,9,3,6,361.38,23.1,46,7,1,3,4.0,0,1,1,1
+SIM-0412,2026-07-31,Organización,Buscador,Diseño,1,0,1,852.69,22.9,18,7,2,2,4.0,0,1,1,0
+SIM-0413,2026-07-31,Cocina,Redes sociales,Precio,5,0,5,725.98,38.0,76,5,2,0,5.0,0,1,0,0
+SIM-0414,2026-07-31,Cocina,Buscador,Durabilidad,2,0,2,855.46,12.5,20,4,0,2,5.0,0,1,0,0
+SIM-0415,2026-07-31,Decoración,Buscador,Practicidad,11,9,2,685.87,24.8,40,6,2,2,2.0,0,1,1,1
+SIM-0416,2026-07-31,Cocina,Redes sociales,Durabilidad,4,2,2,452.84,14.6,27,7,0,3,5.0,0,0,1,0
+SIM-0417,2026-07-31,Cocina,Redes sociales,Practicidad,1,0,1,300.04,24.1,87,6,1,0,4.0,0,1,0,0
+SIM-0418,2026-07-31,Organización,Redes sociales,Precio,2,1,1,685.34,19.2,50,13,2,1,5.0,0,1,1,1
+SIM-0419,2026-07-31,Organización,Buscador,Practicidad,1,0,1,829.23,15.6,53,3,0,2,4.0,0,1,0,0
+SIM-0420,2026-07-31,Decoración,Recomendación,Precio,2,0,2,864.3,28.3,41,5,0,1,4.0,1,1,0,0
+SIM-0421,2026-07-31,Decoración,Recomendación,Precio,6,2,4,434.4,28.1,18,3,2,2,4.0,0,0,1,1
+SIM-0422,2026-07-31,Cocina,Recomendación,Durabilidad,12,4,8,969.79,21.1,7,7,3,1,3.0,0,1,1,1
+SIM-0423,2026-07-31,Cocina,Buscador,Precio,10,4,6,921.96,21.6,113,4,1,1,5.0,0,1,1,0
+SIM-0424,2026-07-31,Decoración,Recomendación,Precio,3,0,3,662.57,27.0,55,7,2,0,4.0,0,1,1,0
+SIM-0425,2026-07-31,Cocina,Buscador,Practicidad,1,0,1,687.58,19.2,83,11,3,1,3.0,0,1,0,0
+SIM-0426,2026-07-31,Cocina,Recomendación,Practicidad,1,0,1,500.7,28.6,16,2,1,2,1.0,0,1,0,0
+SIM-0427,2026-07-31,Organización,Recomendación,Diseño,11,2,9,588.18,25.0,72,1,0,0,4.0,0,1,1,0
+SIM-0428,2026-07-31,Organización,Recomendación,Practicidad,10,2,8,344.97,29.2,90,3,2,0,2.0,1,1,0,0
+SIM-0429,2026-07-31,Decoración,Recomendación,Precio,9,0,9,484.56,16.6,63,5,0,1,4.0,0,1,1,0
+SIM-0430,2026-07-31,Decoración,Redes sociales,Durabilidad,4,2,2,620.22,37.9,74,6,1,4,5.0,0,0,1,1
+SIM-0431,2026-07-31,Decoración,Redes sociales,Practicidad,4,0,4,298.33,13.5,112,1,1,2,3.0,0,1,0,0
+SIM-0432,2026-07-31,Decoración,Buscador,Practicidad,11,9,2,633.32,17.9,27,0,0,0,4.0,0,0,1,1
+SIM-0433,2026-07-31,Organización,Redes sociales,Durabilidad,5,2,3,378.14,29.6,51,5,1,2,3.0,0,1,1,0
+SIM-0434,2026-07-31,Cocina,Redes sociales,Diseño,8,5,3,1028.56,20.3,66,6,2,0,4.0,0,1,1,0
+SIM-0435,2026-07-31,Organización,Redes sociales,Durabilidad,6,1,5,944.68,14.2,31,4,0,2,3.0,0,1,1,1
+SIM-0436,2026-07-31,Organización,Buscador,Diseño,3,1,2,449.49,14.1,63,5,0,5,3.0,0,1,0,0
+SIM-0437,2026-07-31,Cocina,Buscador,Practicidad,8,6,2,926.97,12.5,16,4,0,3,2.0,0,1,0,0
+SIM-0438,2026-07-31,Cocina,Buscador,Precio,1,0,1,417.17,20.4,66,6,1,1,3.0,0,1,0,0
+SIM-0439,2026-07-31,Decoración,Recomendación,Diseño,12,6,6,479.54,24.6,67,6,2,2,4.0,0,1,1,0
+SIM-0440,2026-07-31,Organización,Redes sociales,Durabilidad,12,3,9,346.31,17.7,5,7,2,3,3.0,0,1,1,0
+SIM-0441,2026-07-31,Cocina,Buscador,Diseño,9,6,3,516.36,27.8,96,6,1,2,4.0,0,1,0,0
+SIM-0442,2026-07-31,Decoración,Buscador,Practicidad,10,6,4,423.8,28.2,79,7,1,0,4.0,0,1,1,0
+SIM-0443,2026-07-31,Organización,Recomendación,Practicidad,1,0,1,556.92,20.7,12,3,0,1,3.0,1,1,1,0
+SIM-0444,2026-07-31,Decoración,Redes sociales,Practicidad,1,0,1,455.42,32.1,14,9,1,1,3.0,0,1,1,1
+SIM-0445,2026-07-31,Decoración,Recomendación,Practicidad,1,0,1,298.33,20.8,54,5,0,0,4.0,0,1,0,0
+SIM-0446,2026-07-31,Decoración,Recomendación,Durabilidad,12,5,7,1053.65,30.5,115,4,0,3,2.0,0,1,0,0
+SIM-0447,2026-07-31,Decoración,Buscador,Diseño,10,5,5,760.41,27.7,83,5,1,2,3.0,0,1,1,1
+SIM-0448,2026-07-31,Organización,Redes sociales,Durabilidad,2,0,2,1027.68,24.1,88,4,1,1,4.0,0,1,0,0
+SIM-0449,2026-07-31,Decoración,Buscador,Practicidad,7,5,2,739.32,31.2,59,4,2,1,5.0,0,1,1,1
+SIM-0450,2026-07-31,Decoración,Redes sociales,Durabilidad,3,0,3,663.27,21.9,21,1,0,0,5.0,0,1,1,0
+SIM-0451,2026-07-31,Decoración,Buscador,Precio,1,0,1,1108.86,29.8,54,8,2,2,5.0,0,1,1,1
+SIM-0452,2026-07-31,Cocina,Recomendación,Durabilidad,6,4,2,538.55,28.7,41,3,1,0,3.0,0,0,1,1
+SIM-0453,2026-07-31,Decoración,Buscador,Practicidad,5,0,5,739.1,20.7,36,4,1,2,4.0,1,0,1,1
+SIM-0454,2026-07-31,Decoración,Buscador,Precio,3,2,1,336.53,17.2,65,4,1,2,4.0,1,1,0,0
+SIM-0455,2026-07-31,Decoración,Redes sociales,Durabilidad,10,6,4,426.98,21.1,21,6,2,1,3.0,0,1,1,1
+SIM-0456,2026-07-31,Cocina,Redes sociales,Diseño,9,5,4,593.83,23.4,41,8,0,2,5.0,1,1,1,0
+SIM-0457,2026-07-31,Decoración,Buscador,Precio,3,1,2,745.28,20.0,61,5,2,1,4.0,0,1,0,0
+SIM-0458,2026-07-31,Cocina,Redes sociales,Precio,4,1,3,1503.05,22.1,43,5,1,1,5.0,0,1,0,0
+SIM-0459,2026-07-31,Decoración,Recomendación,Precio,10,5,5,898.7,28.0,57,6,3,1,3.0,0,1,1,1
+SIM-0460,2026-07-31,Decoración,Redes sociales,Practicidad,5,3,2,653.38,20.9,21,9,4,1,2.0,0,1,0,0
+SIM-0461,2026-07-31,Decoración,Recomendación,Precio,6,4,2,744.5,19.5,32,5,1,2,5.0,0,1,1,0
+SIM-0462,2026-07-31,Organización,Buscador,Durabilidad,10,6,4,366.46,17.5,49,5,0,2,5.0,0,1,1,0
+SIM-0463,2026-07-31,Decoración,Buscador,Diseño,6,2,4,663.75,25.5,79,1,0,1,5.0,0,1,1,1
+SIM-0464,2026-07-31,Organización,Redes sociales,Durabilidad,4,0,4,883.03,23.0,12,2,1,0,5.0,0,0,0,0
+SIM-0465,2026-07-31,Decoración,Recomendación,Practicidad,10,1,9,804.16,19.7,36,9,1,1,5.0,0,1,0,0
+SIM-0466,2026-07-31,Cocina,Redes sociales,Precio,1,0,1,557.17,16.9,22,7,1,1,2.0,0,1,0,0
+SIM-0467,2026-07-31,Organización,Recomendación,Practicidad,4,0,4,292.87,21.7,46,2,2,3,4.0,0,1,1,0
+SIM-0468,2026-07-31,Decoración,Buscador,Diseño,9,1,8,661.49,24.9,66,6,1,2,4.0,0,1,1,0
+SIM-0469,2026-07-31,Decoración,Buscador,Practicidad,8,5,3,622.87,14.9,36,8,1,1,4.0,1,0,0,0
+SIM-0470,2026-07-31,Organización,Recomendación,Practicidad,11,3,8,796.42,18.6,40,4,2,1,4.0,0,1,1,0
+SIM-0471,2026-07-31,Cocina,Redes sociales,Practicidad,7,3,4,666.66,20.7,59,9,2,4,3.0,0,1,1,0
+SIM-0472,2026-07-31,Cocina,Redes sociales,Diseño,9,5,4,288.81,14.1,30,7,1,5,1.0,0,1,1,0
+SIM-0473,2026-07-31,Organización,Buscador,Diseño,5,1,4,906.62,35.7,58,7,3,2,4.0,0,1,0,0
+SIM-0474,2026-07-31,Cocina,Recomendación,Diseño,4,2,2,490.45,20.0,56,10,2,1,4.0,0,1,0,0
+SIM-0475,2026-07-31,Decoración,Redes sociales,Durabilidad,1,0,1,402.42,19.8,18,5,0,2,4.0,0,1,1,0
+SIM-0476,2026-07-31,Organización,Redes sociales,Practicidad,12,10,2,403.32,21.2,101,4,0,5,5.0,0,1,1,0
+SIM-0477,2026-07-31,Cocina,Redes sociales,Practicidad,11,8,3,471.17,21.0,93,7,2,5,4.0,0,0,1,1
+SIM-0478,2026-07-31,Organización,Buscador,Precio,5,3,2,562.32,25.7,70,4,2,2,4.0,0,0,0,0
+SIM-0479,2026-07-31,Cocina,Buscador,Durabilidad,9,6,3,244.55,8.0,90,11,3,2,3.0,0,1,1,0
+SIM-0480,2026-07-31,Cocina,Recomendación,Durabilidad,5,2,3,1247.66,13.3,29,2,0,0,3.0,0,1,0,0
+SIM-0481,2026-07-31,Organización,Buscador,Practicidad,11,8,3,731.59,24.1,51,7,1,3,3.0,0,1,1,0
+SIM-0482,2026-07-31,Cocina,Redes sociales,Practicidad,3,2,1,333.18,17.6,70,4,0,2,3.0,0,0,0,0
+SIM-0483,2026-07-31,Organización,Buscador,Practicidad,6,4,2,387.7,18.9,32,5,2,1,4.0,0,1,1,0
+SIM-0484,2026-07-31,Cocina,Recomendación,Durabilidad,3,1,2,345.05,22.8,40,6,1,0,3.0,0,1,0,0
+SIM-0485,2026-07-31,Cocina,Buscador,Durabilidad,4,0,4,358.07,25.2,11,2,1,1,3.0,1,1,0,0
+SIM-0486,2026-07-31,Organización,Redes sociales,Practicidad,6,4,2,1091.58,16.8,16,9,4,1,2.0,1,0,1,0
+SIM-0487,2026-07-31,Organización,Buscador,Precio,10,5,5,607.3,26.2,29,5,0,2,4.0,0,0,1,0
+SIM-0488,2026-07-31,Organización,Redes sociales,Practicidad,9,3,6,1304.97,14.4,24,7,0,1,3.0,0,1,1,0
+SIM-0489,2026-07-31,Cocina,Buscador,Precio,1,0,1,518.22,18.9,35,4,2,2,3.0,1,0,1,1
+SIM-0490,2026-07-31,Organización,Buscador,Durabilidad,8,7,1,649.57,15.6,66,8,2,3,2.0,0,0,1,0
+SIM-0491,2026-07-31,Cocina,Recomendación,Durabilidad,12,4,8,849.26,24.8,43,1,1,0,5.0,0,1,1,0
+SIM-0492,2026-07-31,Organización,Buscador,Precio,6,3,3,614.93,25.0,30,2,0,2,4.0,0,1,1,0
+SIM-0493,2026-07-31,Organización,Buscador,Practicidad,11,8,3,346.22,24.5,33,3,2,1,3.0,0,1,1,1
+SIM-0494,2026-07-31,Organización,Redes sociales,Precio,1,0,1,946.47,15.2,25,9,3,1,3.0,0,1,1,0
+SIM-0495,2026-07-31,Cocina,Redes sociales,Diseño,2,0,2,432.79,25.4,22,8,2,4,3.0,0,1,1,1
+SIM-0496,2026-07-31,Decoración,Redes sociales,Durabilidad,12,0,12,599.0,7.5,47,2,0,0,5.0,0,1,1,1
+SIM-0497,2026-07-31,Cocina,Redes sociales,Precio,4,1,3,1085.22,15.2,38,4,1,1,3.0,0,1,0,0
+SIM-0498,2026-07-31,Decoración,Buscador,Precio,4,3,1,990.87,23.2,26,5,0,3,3.0,0,0,0,0
+SIM-0499,2026-07-31,Cocina,Redes sociales,Precio,5,2,3,628.33,33.0,101,3,1,1,4.0,0,1,0,0
+SIM-0500,2026-07-31,Decoración,Recomendación,Diseño,4,3,1,935.72,24.4,40,8,2,5,2.0,0,0,0,0
+SIM-0501,2026-07-31,Cocina,Buscador,Precio,1,0,1,821.69,38.3,32,6,1,2,3.0,0,1,0,0
+SIM-0502,2026-07-31,Organización,Buscador,Diseño,4,2,2,511.86,20.1,61,7,2,0,3.0,0,1,0,0
+SIM-0503,2026-07-31,Organización,Buscador,Practicidad,4,1,3,433.28,20.1,120,4,0,0,5.0,0,1,0,0
+SIM-0504,2026-07-31,Organización,Buscador,Diseño,10,5,5,355.25,5.0,72,5,2,3,2.0,0,0,0,0
+SIM-0505,2026-07-31,Cocina,Recomendación,Diseño,11,9,2,363.73,5.0,6,6,1,2,5.0,0,1,1,1
+SIM-0506,2026-07-31,Organización,Buscador,Durabilidad,4,0,4,450.98,35.9,40,6,1,2,3.0,0,1,1,0
+SIM-0507,2026-07-31,Cocina,Redes sociales,Durabilidad,7,3,4,1072.62,21.4,55,5,0,4,5.0,0,1,1,1
+SIM-0508,2026-07-31,Decoración,Redes sociales,Diseño,10,3,7,590.6,25.3,26,5,0,1,3.0,1,1,0,0
+SIM-0509,2026-07-31,Cocina,Redes sociales,Diseño,7,3,4,670.24,14.9,102,1,1,1,2.0,0,0,0,0
+SIM-0510,2026-07-31,Cocina,Buscador,Durabilidad,11,2,9,279.8,27.8,55,4,1,2,4.0,0,1,1,0
+SIM-0511,2026-07-31,Organización,Recomendación,Durabilidad,1,0,1,639.14,34.5,107,5,0,0,3.0,0,1,0,0
+SIM-0512,2026-07-31,Organización,Buscador,Practicidad,4,2,2,382.98,20.2,25,4,0,2,4.0,0,1,1,1
+SIM-0513,2026-07-31,Cocina,Redes sociales,Durabilidad,10,3,7,506.29,23.4,20,1,0,1,4.0,1,1,0,0
+SIM-0514,2026-07-31,Decoración,Redes sociales,Precio,3,1,2,1524.27,15.0,12,5,1,3,3.0,0,0,1,1
+SIM-0515,2026-07-31,Organización,Redes sociales,Durabilidad,12,6,6,339.7,20.4,70,4,1,1,4.0,0,1,0,0
+SIM-0516,2026-07-31,Cocina,Buscador,Precio,2,1,1,552.87,20.8,102,1,1,0,2.0,0,1,0,0
+SIM-0517,2026-07-31,Organización,Redes sociales,Diseño,4,2,2,1356.9,17.4,69,4,0,2,3.0,0,1,1,0
+SIM-0518,2026-07-31,Decoración,Redes sociales,Precio,4,3,1,549.43,25.4,55,11,4,2,5.0,0,0,0,0
+SIM-0519,2026-07-31,Cocina,Redes sociales,Practicidad,8,0,8,611.72,23.0,115,1,0,0,2.0,0,1,0,0
+SIM-0520,2026-07-31,Cocina,Redes sociales,Durabilidad,11,4,7,157.89,29.6,63,6,1,1,5.0,0,1,1,1
+SIM-0521,2026-07-31,Organización,Redes sociales,Diseño,3,2,1,443.01,33.0,52,5,1,1,3.0,0,1,0,0
+SIM-0522,2026-07-31,Decoración,Recomendación,Practicidad,1,0,1,651.83,23.0,25,8,1,3,4.0,0,1,0,0
+SIM-0523,2026-07-31,Organización,Recomendación,Precio,8,4,4,762.29,18.8,51,6,1,3,4.0,0,1,1,0
+SIM-0524,2026-07-31,Cocina,Buscador,Precio,5,3,2,636.25,24.7,117,2,0,2,3.0,0,1,0,0
+SIM-0525,2026-07-31,Organización,Buscador,Precio,9,7,2,529.94,21.3,46,7,1,2,2.0,1,1,1,1
+SIM-0526,2026-07-31,Cocina,Recomendación,Precio,12,5,7,1352.69,24.9,30,9,2,1,4.0,0,1,1,0
+SIM-0527,2026-07-31,Cocina,Recomendación,Durabilidad,2,1,1,541.83,17.3,9,7,1,0,4.0,0,1,1,1
+SIM-0528,2026-07-31,Organización,Buscador,Durabilidad,10,4,6,536.84,32.1,38,2,0,0,3.0,0,1,1,0
+SIM-0529,2026-07-31,Decoración,Redes sociales,Diseño,3,1,2,507.45,18.9,34,8,0,2,5.0,0,1,1,1
+SIM-0530,2026-07-31,Decoración,Redes sociales,Durabilidad,1,0,1,489.59,27.8,132,4,0,0,3.0,0,1,0,0
+SIM-0531,2026-07-31,Organización,Redes sociales,Durabilidad,4,3,1,666.78,25.8,52,8,1,1,4.0,0,1,1,1
+SIM-0532,2026-07-31,Cocina,Redes sociales,Durabilidad,9,3,6,957.88,14.9,20,7,2,0,3.0,1,0,1,1
+SIM-0533,2026-07-31,Decoración,Recomendación,Practicidad,11,8,3,357.53,41.3,111,10,4,3,3.0,0,1,1,1
+SIM-0534,2026-07-31,Decoración,Recomendación,Diseño,10,4,6,1165.15,29.8,53,7,1,0,3.0,0,1,0,0
+SIM-0535,2026-07-31,Decoración,Recomendación,Practicidad,3,2,1,800.7,26.7,7,9,1,2,5.0,0,1,1,1
+SIM-0536,2026-07-31,Cocina,Redes sociales,Durabilidad,6,1,5,611.66,25.3,26,3,1,1,4.0,0,1,1,0
+SIM-0537,2026-07-31,Organización,Buscador,Durabilidad,7,0,7,956.24,20.9,66,4,1,2,5.0,1,1,0,0
+SIM-0538,2026-07-31,Cocina,Redes sociales,Precio,1,0,1,310.41,23.9,46,7,1,1,3.0,0,1,0,0
+SIM-0539,2026-07-31,Decoración,Recomendación,Practicidad,4,2,2,1005.18,19.0,21,8,1,1,5.0,0,1,0,0
+SIM-0540,2026-07-31,Cocina,Redes sociales,Practicidad,4,2,2,740.44,17.3,7,5,0,5,2.0,0,1,0,0
+SIM-0541,2026-07-31,Decoración,Recomendación,Durabilidad,4,1,3,617.76,17.9,78,7,0,2,4.0,0,1,0,0
+SIM-0542,2026-07-31,Decoración,Redes sociales,Practicidad,6,3,3,592.86,17.4,60,3,1,1,4.0,0,1,1,0
+SIM-0543,2026-07-31,Organización,Redes sociales,Durabilidad,8,6,2,1395.58,12.8,67,1,0,3,3.0,0,1,1,0
+SIM-0544,2026-07-31,Organización,Recomendación,Practicidad,1,0,1,661.13,24.9,31,6,1,1,2.0,0,1,1,1
+SIM-0545,2026-07-31,Organización,Buscador,Diseño,4,2,2,850.83,11.8,39,3,0,0,4.0,0,1,0,0
+SIM-0546,2026-07-31,Cocina,Redes sociales,Precio,12,8,4,506.76,30.6,35,7,1,1,5.0,0,1,1,1
+SIM-0547,2026-07-31,Cocina,Buscador,Practicidad,3,2,1,667.89,33.8,17,7,1,3,3.0,0,0,1,1
+SIM-0548,2026-07-31,Decoración,Recomendación,Diseño,7,4,3,411.65,14.1,66,3,1,4,3.0,1,1,0,0
+SIM-0549,2026-07-31,Organización,Redes sociales,Precio,3,1,2,407.46,18.3,51,2,1,3,4.0,0,0,0,0
+SIM-0550,2026-07-31,Organización,Redes sociales,Precio,11,4,7,803.96,27.7,14,3,1,4,5.0,0,1,1,0
+SIM-0551,2026-07-31,Organización,Redes sociales,Practicidad,12,7,5,268.03,30.5,121,9,1,0,5.0,0,1,1,0
+SIM-0552,2026-07-31,Decoración,Redes sociales,Durabilidad,5,3,2,419.86,23.2,18,5,2,2,4.0,0,1,1,0
+SIM-0553,2026-07-31,Cocina,Buscador,Precio,12,1,11,654.23,35.4,97,6,1,0,3.0,0,1,1,1
+SIM-0554,2026-07-31,Organización,Recomendación,Durabilidad,8,7,1,693.37,12.8,87,6,0,1,2.0,0,1,0,0
+SIM-0555,2026-07-31,Cocina,Redes sociales,Diseño,3,0,3,651.45,16.0,22,6,1,0,3.0,0,1,0,0
+SIM-0556,2026-07-31,Decoración,Redes sociales,Diseño,12,4,8,596.34,26.4,26,5,0,0,4.0,0,1,1,0
+SIM-0557,2026-07-31,Organización,Buscador,Diseño,12,3,9,433.48,22.3,95,4,0,0,2.0,0,0,0,0
+SIM-0558,2026-07-31,Decoración,Buscador,Durabilidad,8,4,4,750.46,20.4,30,2,0,1,2.0,0,1,1,0
+SIM-0559,2026-07-31,Cocina,Redes sociales,Precio,5,3,2,1377.9,19.3,54,3,1,1,2.0,0,0,0,0
+SIM-0560,2026-07-31,Cocina,Buscador,Precio,2,1,1,757.13,19.7,37,3,1,0,4.0,1,1,1,0
+SIM-0561,2026-07-31,Cocina,Redes sociales,Diseño,6,5,1,619.94,18.8,33,5,0,1,4.0,0,0,0,0
+SIM-0562,2026-07-31,Cocina,Recomendación,Diseño,8,6,2,742.23,21.9,58,6,3,1,3.0,0,1,1,1
+SIM-0563,2026-07-31,Cocina,Redes sociales,Diseño,5,3,2,686.41,12.1,50,10,3,2,4.0,0,1,1,1
+SIM-0564,2026-07-31,Cocina,Buscador,Practicidad,4,1,3,511.41,9.0,45,5,1,1,5.0,1,1,0,0
+SIM-0565,2026-07-31,Decoración,Recomendación,Diseño,8,5,3,466.75,36.3,47,4,1,1,5.0,0,1,1,0
+SIM-0566,2026-07-31,Cocina,Recomendación,Practicidad,10,8,2,267.47,28.8,83,7,0,2,2.0,0,1,1,0
+SIM-0567,2026-07-31,Cocina,Buscador,Diseño,10,4,6,873.62,19.7,90,9,0,1,4.0,0,0,1,1
+SIM-0568,2026-07-31,Decoración,Buscador,Diseño,9,6,3,508.93,25.3,26,1,0,0,3.0,1,1,1,0
+SIM-0569,2026-07-31,Cocina,Buscador,Precio,8,5,3,413.34,18.3,88,3,0,1,5.0,0,1,0,0
+SIM-0570,2026-07-31,Cocina,Redes sociales,Diseño,5,1,4,334.96,20.8,32,6,1,3,5.0,0,1,1,0
+SIM-0571,2026-07-31,Organización,Recomendación,Precio,2,0,2,583.43,23.8,96,5,2,1,4.0,0,0,0,0
+SIM-0572,2026-07-31,Decoración,Redes sociales,Diseño,7,3,4,599.71,31.9,16,6,0,1,5.0,0,1,0,0
+SIM-0573,2026-07-31,Decoración,Buscador,Diseño,11,9,2,311.62,45.0,41,7,2,3,4.0,1,1,0,0
+SIM-0574,2026-07-31,Decoración,Redes sociales,Durabilidad,2,1,1,386.59,26.0,18,3,0,3,2.0,0,1,0,0
+SIM-0575,2026-07-31,Decoración,Recomendación,Precio,4,1,3,643.58,31.7,18,7,3,3,4.0,0,1,1,1
+SIM-0576,2026-07-31,Organización,Buscador,Practicidad,3,2,1,881.12,30.2,29,4,2,0,5.0,0,1,1,0
+SIM-0577,2026-07-31,Decoración,Recomendación,Precio,8,2,6,250.49,24.5,47,1,1,1,3.0,1,0,0,0
+SIM-0578,2026-07-31,Cocina,Recomendación,Diseño,7,5,2,574.87,24.1,40,7,1,1,5.0,0,1,1,1
+SIM-0579,2026-07-31,Decoración,Recomendación,Diseño,7,3,4,886.06,24.0,34,6,2,0,4.0,0,1,1,0
+SIM-0580,2026-07-31,Cocina,Redes sociales,Diseño,11,8,3,422.63,14.0,42,7,2,0,5.0,0,0,1,0
+SIM-0581,2026-07-31,Organización,Recomendación,Precio,2,1,1,388.81,24.0,18,5,1,1,4.0,1,1,1,1
+SIM-0582,2026-07-31,Organización,Redes sociales,Practicidad,3,0,3,867.95,11.5,61,2,0,1,4.0,0,1,0,0
+SIM-0583,2026-07-31,Organización,Buscador,Diseño,6,5,1,428.31,14.7,27,8,0,0,4.0,0,1,1,1
+SIM-0584,2026-07-31,Cocina,Recomendación,Diseño,6,3,3,207.91,27.5,75,4,0,1,3.0,1,1,1,1
+SIM-0585,2026-07-31,Cocina,Buscador,Precio,4,0,4,479.77,23.1,36,1,1,1,4.0,0,1,0,0
+SIM-0586,2026-07-31,Cocina,Recomendación,Diseño,5,2,3,478.53,13.6,122,11,3,1,3.0,0,1,0,0
+SIM-0587,2026-07-31,Cocina,Redes sociales,Diseño,11,4,7,504.29,12.7,23,5,2,1,4.0,0,1,0,0
+SIM-0588,2026-07-31,Organización,Recomendación,Durabilidad,8,3,5,718.32,15.1,16,5,2,2,4.0,0,1,1,1
+SIM-0589,2026-07-31,Organización,Redes sociales,Precio,3,0,3,579.6,21.1,131,2,0,1,4.0,0,1,0,0
+SIM-0590,2026-07-31,Decoración,Buscador,Precio,1,0,1,371.73,36.3,110,11,3,3,4.0,1,1,0,0
+SIM-0591,2026-07-31,Organización,Redes sociales,Precio,7,0,7,779.6,25.6,141,0,0,1,3.0,0,0,0,0
+SIM-0592,2026-07-31,Organización,Recomendación,Diseño,8,3,5,699.62,20.8,59,13,4,2,3.0,0,1,1,0
+SIM-0593,2026-07-31,Organización,Recomendación,Precio,1,0,1,265.64,18.2,30,4,1,3,4.0,0,1,0,0
+SIM-0594,2026-07-31,Cocina,Redes sociales,Diseño,8,2,6,534.47,28.6,94,1,0,2,2.0,0,1,0,0
+SIM-0595,2026-07-31,Cocina,Redes sociales,Practicidad,10,5,5,385.2,28.0,123,6,0,0,3.0,0,1,1,1
+SIM-0596,2026-07-31,Cocina,Redes sociales,Diseño,4,2,2,475.36,18.9,60,2,0,1,5.0,1,1,0,0
+SIM-0597,2026-07-31,Cocina,Buscador,Durabilidad,8,5,3,475.48,20.0,32,10,2,2,4.0,0,1,1,1
+SIM-0598,2026-07-31,Cocina,Buscador,Diseño,12,0,12,594.99,23.8,51,4,2,0,5.0,0,1,1,0
+SIM-0599,2026-07-31,Organización,Redes sociales,Practicidad,3,0,3,438.69,28.0,21,4,1,1,4.0,0,1,1,1
+SIM-0600,2026-07-31,Cocina,Buscador,Diseño,8,7,1,301.41,25.2,66,8,0,3,2.0,0,1,0,0
+SIM-0001,2026-07-31,Organización,Redes sociales,Diseño,9,1,8,542.31,32.8,50,3,1,0,3.0,1,1,0,0
+SIM-0002,2026-07-31,Decoración,Buscador,Practicidad,10,3,7,662.69,25.2,9,1,0,1,3.0,0,1,1,1
+SIM-0003,2026-07-31,Organización,Redes sociales,Precio,5,1,4,507.26,15.0,21,6,0,0,2.0,0,1,0,0
+SIM-0004,2026-07-31,Decoración,Buscador,Durabilidad,4,0,4,370.91,24.8,85,3,2,1,4.0,0,1,0,0
+SIM-0005,2026-07-31,Decoración,Buscador,Precio,7,1,6,530.75,24.5,57,4,2,0,4.0,0,1,0,0
+SIM-0006,2026-07-31,Organización,Redes sociales,Practicidad,12,9,3,1009.8,13.6,26,5,1,2,3.0,0,1,1,0
+SIM-0007,2026-07-31,Organización,Recomendación,Diseño,12,4,8,561.56,7.3,15,2,2,2,3.0,0,1,1,0
+SIM-0008,2026-07-31,Decoración,Redes sociales,Durabilidad,3,1,2,407.33,15.3,82,6,2,2,4.0,0,1,1,0
