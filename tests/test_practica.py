@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from streamlit.testing.v1 import AppTest
-from analisis import cargar_datos, analizar, accion, VARIABLES, NUMERICAS, OBJETIVO
+from analisis import cargar_datos, analizar, accion, crear_plan_piloto, VARIABLES, NUMERICAS, OBJETIVO
 
 RAIZ = Path(__file__).resolve().parents[1]
 
@@ -55,6 +55,54 @@ class Practica(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "no se imputa"):
             analizar(datos)
 
+    def test_mensajes_y_responsables(self):
+        for _, fila in self.r["evaluados"].iterrows():
+            propuesta = accion(fila)
+            self.assertTrue(propuesta["Responsable"])
+            self.assertTrue(propuesta["Siguiente paso"])
+            self.assertNotIn("beneficio disponible", propuesta["Mensaje"])
+            self.assertNotIn("descuento", propuesta["Mensaje"].lower())
+        cupon = self.r["evaluados"].query("segmento == 'Uso frecuente de cupones' and permiso_contacto == 1 and incidencia_abierta == 0 and probabilidad >= 0.35").iloc[0]
+        self.assertIn(cupon.categoria_preferida.lower(), accion(cupon)["Mensaje"])
+
+    def test_piloto_separacion_y_reproducibilidad(self):
+        datos = self.r["evaluados"].copy(deep=True)
+        antes = datos.copy(deep=True)
+        plan = crear_plan_piloto(datos, 100, 20)
+        elegibles = datos.loc[datos.permiso_contacto.eq(1) & datos.incidencia_abierta.eq(0)]
+        self.assertEqual(set(plan.cliente_id), set(elegibles.cliente_id))
+        self.assertFalse(plan.cliente_id.duplicated().any())
+        control = plan.loc[plan.grupo_experimento.eq("Control")]
+        tratamiento = plan.loc[plan.grupo_experimento.eq("Tratamiento")]
+        self.assertTrue(len(control) and len(tratamiento))
+        self.assertFalse(set(control.cliente_id) & set(tratamiento.cliente_id))
+        self.assertTrue(control.Mensaje.eq("").all())
+        self.assertTrue(tratamiento.Mensaje.str.len().gt(0).all())
+        self.assertNotIn(OBJETIVO, plan.columns)
+        self.assertNotIn("recompra_sin_promocion_60d", plan.columns)
+        self.assertTrue(plan.ventana_dias.eq(60).all())
+        pd.testing.assert_frame_equal(plan, crear_plan_piloto(datos.sample(frac=1, random_state=99), 100, 20))
+        pd.testing.assert_frame_equal(datos, antes)
+        reducido = crear_plan_piloto(datos, 50, 40)
+        self.assertLess(len(reducido), len(plan))
+        self.assertEqual(len(reducido), int(len(elegibles) * 0.5 + 0.5))
+
+    def test_piloto_grupos_pequenos_y_entradas_invalidas(self):
+        elegibles = self.r["evaluados"].query("permiso_contacto == 1 and incidencia_abierta == 0")
+        self.assertTrue(crear_plan_piloto(elegibles.iloc[:0]).empty)
+        uno = crear_plan_piloto(elegibles.iloc[:1])
+        self.assertEqual(len(uno), 1)
+        self.assertEqual(int(uno.grupo_experimento.eq("Control").sum()), 0)
+        dos = crear_plan_piloto(elegibles.iloc[:2], 100, 10)
+        self.assertEqual(set(dos.grupo_experimento), {"Tratamiento", "Control"})
+        sin_permiso = elegibles.copy(); sin_permiso.permiso_contacto = 0
+        self.assertTrue(crear_plan_piloto(sin_permiso).empty)
+        for participante, control in [(0, 20), (101, 20), (100, 0), (100, 100)]:
+            with self.assertRaises(ValueError):
+                crear_plan_piloto(elegibles, participante, control)
+        with self.assertRaises(ValueError):
+            crear_plan_piloto(pd.concat([elegibles, elegibles.iloc[:1]]))
+
     def test_interfaz_seis_pestanas(self):
         at = AppTest.from_file(str(RAIZ / "app.py"), default_timeout=30).run()
         self.assertEqual(len(at.exception), 0)
@@ -68,6 +116,14 @@ class Practica(unittest.TestCase):
         at.selectbox(key="segmento_decision").select("Uso frecuente de cupones").run()
         self.assertEqual(len(at.exception), 0)
         self.assertTrue(at.session_state["limpieza_aplicada"])
+        at.checkbox(key="revision_piloto").check().run()
+        self.assertTrue(at.checkbox(key="revision_piloto").value)
+        at.slider(key="porcentaje_piloto").set_value(50).run()
+        self.assertFalse(at.checkbox(key="revision_piloto").value)
+        at.checkbox(key="revision_piloto").check().run()
+        at.selectbox(key="segmento_decision").select("Todos").run()
+        self.assertFalse(at.checkbox(key="revision_piloto").value)
+        self.assertEqual(len(at.exception), 0)
 
 
 if __name__ == "__main__":

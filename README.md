@@ -80,7 +80,13 @@ Matriz de confusión con filas reales [no, sí] y columnas predichas [no, sí]: 
 
 ## Decisiones
 
-Los segmentos usan proporciones del historial y tienen definiciones visibles. Las reglas priorizan permiso de contacto, resolución de incidencias y luego probabilidad e historial de cupones. Las acciones son hipótesis a validar. No se fija un porcentaje de descuento sin información de margen ni se realiza ningún envío. Se propone una prueba aleatoria con grupo de control, pero no se afirma haberla ejecutado.
+Los segmentos usan proporciones del historial y tienen definiciones visibles. Las reglas priorizan permiso de contacto, resolución de incidencias y luego probabilidad e historial de cupones. Cada propuesta muestra acción, canal, mensaje, justificación, responsable y siguiente paso. Los mensajes invitan a comparar productos o revisar su utilidad, sin afirmar que existe un descuento o beneficio vigente.
+
+La pestaña Decisiones permite diseñar un piloto dentro del segmento elegido. Solo son elegibles clientes del conjunto de evaluación con permiso de contacto y sin incidencias abiertas. Se eligen el porcentaje de participantes y el porcentaje de control; la selección aleatoria es reproducible y cada cliente pertenece a un solo grupo. El control conserva la atención habitual y no recibe el mensaje de esta prueba.
+
+El indicador principal es la proporción de clientes con una nueva compra durante 60 días desde el inicio del piloto. Se propone comparar tratamiento menos control en puntos porcentuales y revisar bajas y quejas. La asignación no demuestra que la intervención haya ocurrido: la aplicación no envía mensajes, no inventa resultados y no usa la recompra histórica para calcular el efecto del piloto.
+
+El CSV del plan incluye grupo, acción, canal, mensaje, responsable, siguiente paso e indicador. Su descarga requiere confirmar la revisión de permisos, exclusiones y frecuencia de contacto, y que existan participantes en ambos grupos. Si cambia el segmento o los porcentajes, la confirmación se reinicia. El tamaño seleccionado es didáctico y no garantiza potencia estadística.
 
 ## Verificación
 
@@ -88,7 +94,7 @@ Los segmentos usan proporciones del historial y tienen definiciones visibles. La
 python -m unittest discover -s tests -v
 ```
 
-Se comprobaron los conteos contra los CSV, la conservación del resultado, los rangos, la ausencia de duplicados después del tratamiento, la separación de clientes y el cálculo de medianas solo en entrenamiento. Una prueba perturba únicamente datos de evaluación y confirma que no cambian las medianas aprendidas. También se prueban los permisos de contacto, el rechazo de resultados faltantes y las seis pestañas con AppTest. Los selectores numérico/categórico, de cliente y de segmento se ejercitan sin errores. La interfaz se revisó además en Chrome local y se registraron capturas.
+Se comprobaron los conteos contra los CSV, la conservación del resultado, los rangos, la ausencia de duplicados después del tratamiento, la separación de clientes y el cálculo de medianas solo en entrenamiento. Una prueba perturba únicamente datos de evaluación y confirma que no cambian las medianas aprendidas. También se prueban los permisos de contacto, el rechazo de resultados faltantes y las seis pestañas con AppTest. El piloto se verifica con grupos vacíos, de uno y de dos clientes, exclusiones, asignación reproducible, ausencia de cruces y mensajes vacíos para el control. Los selectores y porcentajes se ejercitan, incluida la anulación de la confirmación al cambiar el plan. La interfaz se revisó además en Chrome local y se registraron capturas.
 
 Límites: datos simulados del mismo generador; una sola separación aleatoria; probabilidades no calibradas externamente; variables de compra correlacionadas; ausencia de costos y de resultados de un experimento comercial. Se requiere validación temporal con datos reales antes de generalizar.
 
@@ -96,6 +102,7 @@ Límites: datos simulados del mismo generador; una sola separación aleatoria; p
 
 - Actividad F05 y rúbrica de Ciencia de Datos, Brightspace, consultadas el 20 de octubre de 2026.
 - Guía de la clase del 6 de octubre: https://lite.evernote.com/note/4d1acac7-ec3e-d49e-bc3f-d2f5e937755a
+- Guía y prototipo del profesor: https://github.com/farkray/streamlit_prototipo_1
 - Prevención de fuga de información: https://scikit-learn.org/stable/common_pitfalls.html
 - Documentación de Streamlit: https://docs.streamlit.io/
 

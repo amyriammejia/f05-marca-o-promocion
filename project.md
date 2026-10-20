@@ -6,7 +6,7 @@
 
 ## Alcance
 
-Seis pestañas funcionales: exploración del dataset; diagnóstico y limpieza; KPIs y segmentos; regresión logística; reglas de acción; selector de cliente con mensaje, canal y justificación. La aplicación presenta propuestas y no envía comunicaciones.
+Seis pestañas funcionales: exploración del dataset; diagnóstico y limpieza; KPIs y segmentos; regresión logística; reglas de acción; selector de cliente con mensaje, canal, justificación, responsable y siguiente paso. Decisiones incluye un piloto con porcentajes configurables, asignación reproducible a tratamiento/control, exclusión por permisos e incidencias y exportación del plan. La aplicación presenta propuestas y no envía comunicaciones.
 
 La simulación contiene 600 clientes y 19 variables; la copia didáctica tiene 608 filas. La separación de entrenamiento y evaluación es de 480/120 clientes. Las medianas y demás transformaciones se ajustan con el entrenamiento. El README y las pruebas documentan los resultados.
 
@@ -20,4 +20,4 @@ El repositorio contiene el código y los datos sintéticos. Los documentos con d
 
 ## Alcance de los resultados
 
-Los resultados describen una simulación. Su aplicación a un negocio requiere datos reales anonimizados, validación temporal, comprobación de calibración, costos y margen por producto, y una prueba de mensajes con grupo de control.
+Los resultados describen una simulación. El plan del piloto fija la recompra a 60 días como indicador; no utiliza los resultados históricos para simular un efecto de los mensajes. Su aplicación a un negocio requiere datos reales anonimizados, validación temporal, comprobación de calibración, costos y margen por producto, y ejecución de la prueba con grupo de control.

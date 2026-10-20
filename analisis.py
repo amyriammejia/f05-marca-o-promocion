@@ -121,18 +121,56 @@ def accion(fila):
     categoria = fila.categoria_preferida.lower()
     if fila.permiso_contacto != 1:
         return {"Acción": "No enviar marketing", "Canal": "Sin envío", "Mensaje": "No se genera un mensaje comercial sin permiso de contacto.",
-                "Justificación": "La autorización de contacto prevalece sobre la probabilidad estimada."}
+                "Justificación": "La autorización de contacto prevalece sobre la probabilidad estimada.",
+                "Responsable": "Marketing · gestión de permisos", "Siguiente paso": "Excluir al cliente de la prueba y conservar su preferencia de contacto."}
     if fila.incidencia_abierta >= 0.5:
         return {"Acción": "Resolver la incidencia", "Canal": "Atención al cliente", "Mensaje": "Queremos dar seguimiento a tu solicitud y confirmar que quedó resuelta. ¿En qué podemos ayudarte?",
-                "Justificación": "Atender la experiencia pendiente antes de una nueva oferta."}
+                "Justificación": "Atender la solicitud de servicio antes de una nueva comunicación comercial.",
+                "Responsable": "Atención al cliente", "Siguiente paso": "Revisar la solicitud y confirmar su resolución; mantener al cliente fuera de la prueba comercial."}
     if fila.probabilidad < 0.35:
         return {"Acción": "Seguimiento sin presión", "Canal": "Correo autorizado", "Mensaje": f"Si vuelves a buscar artículos de {categoria}, aquí puedes revisar nuestras opciones y condiciones de entrega.",
-                "Justificación": "Probabilidad baja: probar un contacto de baja frecuencia y medir respuesta."}
+                "Justificación": "Probabilidad baja: probar un contacto de baja frecuencia y medir respuesta.",
+                "Responsable": "Marketing CRM", "Siguiente paso": "Validar la frecuencia de contacto y probar un mensaje breve frente al grupo de control."}
     if fila.segmento == "Uso frecuente de cupones":
-        return {"Acción": "Probar beneficio con límite", "Canal": "Correo autorizado", "Mensaje": f"Tenemos una selección de {categoria} con un beneficio disponible. Revisa las condiciones y elige lo que te resulte útil.",
-                "Justificación": "Historial con cupones: probar una oferta acotada y comprobar margen; el modelo no calcula su efecto causal."}
-    return {"Acción": "Presentar novedades y valor", "Canal": "Correo autorizado", "Mensaje": f"Descubre novedades de {categoria}. Consulta sus materiales, usos y detalles para elegir lo que mejor va contigo.",
-            "Justificación": "Combinar señales de recompra con el historial para probar un mensaje de producto y utilidad."}
+        return {"Acción": "Facilitar la comparación", "Canal": "Correo autorizado", "Mensaje": f"Explora opciones de {categoria} y compara sus características para elegir lo que te convenga.",
+                "Justificación": "El historial muestra uso frecuente de cupones. Se prueba un mensaje para comparar opciones sin prometer una oferta que los datos no confirman.",
+                "Responsable": "Marketing CRM", "Siguiente paso": "Revisar el contenido de la categoría y probar el mensaje sin descuentos ni beneficios no confirmados."}
+    return {"Acción": "Presentar opciones y utilidad", "Canal": "Correo autorizado", "Mensaje": f"Explora nuestra categoría de {categoria} y revisa los detalles de cada artículo para elegir lo que necesites.",
+            "Justificación": "Combinar señales de recompra con el historial para probar un mensaje de producto y utilidad.",
+            "Responsable": "Marketing CRM", "Siguiente paso": "Revisar que el contenido corresponda a la categoría preferida y compararlo con el grupo de control."}
+
+
+def crear_plan_piloto(datos, porcentaje_piloto=100, porcentaje_control=20):
+    """Prepara una asignación reproducible, sin alterar datos ni simular resultados."""
+    if not 0 < porcentaje_piloto <= 100 or not 0 < porcentaje_control < 100:
+        raise ValueError("Los porcentajes deben permitir participantes en ambos grupos.")
+    if datos.cliente_id.isna().any() or datos.cliente_id.duplicated().any():
+        raise ValueError("Cada cliente debe aparecer una sola vez en el piloto.")
+    elegibles = datos.loc[datos.permiso_contacto.eq(1) & datos.incidencia_abierta.eq(0)].sort_values("cliente_id")
+    columnas = ["cliente_id", "segmento", "probabilidad_estimada", "grupo_experimento", "permiso_contacto",
+                "Acción", "Canal", "Mensaje", "Justificación", "Responsable", "Siguiente paso",
+                "indicador_principal", "ventana_dias"]
+    if elegibles.empty:
+        return pd.DataFrame(columns=columnas)
+    cantidad = max(1, min(len(elegibles), int(len(elegibles) * porcentaje_piloto / 100 + 0.5)))
+    muestra = elegibles.sample(n=cantidad, random_state=42).copy()
+    cantidad_control = min(cantidad - 1, max(1, int(cantidad * porcentaje_control / 100 + 0.5))) if cantidad >= 2 else 0
+    ids_control = set(muestra.sample(n=cantidad_control, random_state=43).cliente_id)
+    filas = []
+    for _, fila in muestra.iterrows():
+        propuesta = accion(fila)
+        es_control = fila.cliente_id in ids_control
+        if es_control:
+            propuesta = {"Acción": "Sin mensaje del piloto", "Canal": "Sin envío del piloto", "Mensaje": "",
+                         "Justificación": "Grupo de comparación asignado al azar.", "Responsable": "Marketing CRM",
+                         "Siguiente paso": "Mantener la atención habitual y medir compras en la misma ventana que el tratamiento."}
+        filas.append({"cliente_id": fila.cliente_id, "segmento": fila.segmento,
+                      "probabilidad_estimada": fila.probabilidad,
+                      "grupo_experimento": "Control" if es_control else "Tratamiento",
+                      "permiso_contacto": fila.permiso_contacto, **propuesta,
+                      "indicador_principal": "Clientes con nueva compra / clientes asignados al grupo",
+                      "ventana_dias": 60})
+    return pd.DataFrame(filas, columns=columnas).sort_values(["grupo_experimento", "cliente_id"]).reset_index(drop=True)
 
 
 def etiqueta(nombre):
