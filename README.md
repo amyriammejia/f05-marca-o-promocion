@@ -1,5 +1,7 @@
 # Marca o promoción
 
+Repositorio público: https://github.com/amyriammejia/f05-marca-o-promocion
+
 Práctica F05 de Ciencia de Datos. Pregunta: **¿qué clientes captados por una promoción volverán a comprar durante los siguientes 60 días y qué acción de marketing conviene probar con cada grupo?**
 
 Contexto académico: tienda ficticia de artículos para el hogar. **Todos los datos son sintéticos** y se generan mediante un programa reproducible. No representan una empresa ni clientes reales. El título plantea una pregunta comercial; el modelo estima recompra, no lealtad psicológica ni el efecto causal de un descuento.

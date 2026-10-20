@@ -16,7 +16,7 @@ PDF con portada institucional y nombre completo, contexto, siete momentos con ca
 
 ## Pendientes humanos
 
-Recibir revisión real de un compañero sobre Decisiones, documentar su comentario y realizar un cambio pertinente; no reemplazarla por una supuesta revisión de IA. Verificar acceso público al repositorio tras autorización de la cuenta. La entrega en Brightspace corresponde a una acción posterior solicitada por la usuaria.
+Recibir revisión real de un compañero sobre Decisiones, documentar su comentario y realizar un cambio pertinente; no reemplazarla por una supuesta revisión de IA. Repositorio público verificado: https://github.com/amyriammejia/f05-marca-o-promocion; el CSV publicado coincide con el local. La entrega en Brightspace corresponde a una acción posterior solicitada por la usuaria.
 
 ## Etapas futuras
 
