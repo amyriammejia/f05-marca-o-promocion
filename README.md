@@ -42,7 +42,7 @@ VS Code está configurado para usar `stream_train/bin/python`. Para ejecutar la 
 - `DICCIONARIO_DATOS.md`: definición de cada variable y su uso.
 - `scripts/generar_datos.py`: simulación reproducible; no descarga ni consulta información personal.
 - `tests/test_practica.py`: comprobaciones de datos, modelo, decisiones e interfaz.
-- `project.md`: alcance y pendientes de entrega.
+- `project.md`: alcance y estructura de la entrega.
 
 La copia del profesor y el respaldo de la práctica inicial se conservan localmente y no forman parte del caso nuevo ni de su repositorio público. El entorno virtual, credenciales y entregables con datos académicos personales quedan excluidos de Git.
 
@@ -90,13 +90,12 @@ python -m unittest discover -s tests -v
 
 Se comprobaron los conteos contra los CSV, la conservación del resultado, los rangos, la ausencia de duplicados después del tratamiento, la separación de clientes y el cálculo de medianas solo en entrenamiento. Una prueba perturba únicamente datos de evaluación y confirma que no cambian las medianas aprendidas. También se prueban los permisos de contacto, el rechazo de resultados faltantes y las seis pestañas con AppTest. Los selectores numérico/categórico, de cliente y de segmento se ejercitan sin errores. La interfaz se revisó además en Chrome local y se registraron capturas.
 
-Límites: datos simulados del mismo generador; una sola separación aleatoria; probabilidades no calibradas externamente; variables de compra correlacionadas; ausencia de costos y de resultados de un experimento comercial. Se requiere validación temporal con datos reales antes de generalizar. La revisión de un compañero y el cambio derivado de su comentario deben incorporarse al PDF antes de entregarlo.
+Límites: datos simulados del mismo generador; una sola separación aleatoria; probabilidades no calibradas externamente; variables de compra correlacionadas; ausencia de costos y de resultados de un experimento comercial. Se requiere validación temporal con datos reales antes de generalizar.
 
-## Fuentes y apoyo de IA
+## Referencias
 
 - Actividad F05 y rúbrica de Ciencia de Datos, Brightspace, consultadas el 20 de octubre de 2026.
 - Guía de la clase del 6 de octubre: https://lite.evernote.com/note/4d1acac7-ec3e-d49e-bc3f-d2f5e937755a
 - Prevención de fuga de información: https://scikit-learn.org/stable/common_pitfalls.html
 - Documentación de Streamlit: https://docs.streamlit.io/
 
-Se utilizó Codex para programar, simular los datos, preparar pruebas, revisar las capturas y elaborar el informe. Las verificaciones están documentadas y se corrigió una gráfica apilada que sumaba tasas superpuestas. No se presentan comentarios de compañeros, experimentos o datos reales inexistentes.

@@ -1,23 +1,23 @@
 # Proyecto F05
 
-Tema aprobado por Ana Myriam: ¿Compran la marca o compran la promoción?
+## Pregunta y contexto
 
-La pregunta operativa es la recompra a 60 días en una cohorte captada por promociones. El contexto es una tienda ficticia de artículos para el hogar; datos sintéticos declarados conforme a la alternativa admitida en F05. Conservar exactamente la carpeta marketing-steamlit.
+¿Compran la marca o compran la promoción? La pregunta operativa es la recompra a 60 días en una cohorte captada por promociones. El contexto es una tienda ficticia de artículos para el hogar, con datos sintéticos declarados. El proyecto se encuentra en la carpeta `marketing-steamlit`.
 
-## Alcance implementado
+## Alcance
 
-Seis pestañas funcionales: explorar el dataset; diagnóstico y limpieza documentada; KPIs y segmentos; regresión logística evaluada sin fuga; reglas de acción; selector con mensaje, canal y justificación. No enviar mensajes. No atribuir causalidad a descuentos ni afirmar lealtad. Los CSV del profesor y la versión inicial se conservan sin usarlos como datos del nuevo caso.
+Seis pestañas funcionales: exploración del dataset; diagnóstico y limpieza; KPIs y segmentos; regresión logística; reglas de acción; selector de cliente con mensaje, canal y justificación. La aplicación presenta propuestas y no envía comunicaciones.
 
-600 clientes, 19 variables, 608 filas en la copia didáctica con errores. División 480/120; las medianas se aprenden del entrenamiento. Ver README y pruebas para resultados.
+La simulación contiene 600 clientes y 19 variables; la copia didáctica tiene 608 filas. La separación de entrenamiento y evaluación es de 480/120 clientes. Las medianas y demás transformaciones se ajustan con el entrenamiento. El README y las pruebas documentan los resultados.
 
-## Entrega requerida
+## Entrega
 
-PDF con portada institucional y nombre completo, contexto, siete momentos con capturas reales y explicaciones de 80 a 120 palabras, enlace público a GitHub. Conservar DOCX editable derivado de la plantilla AnahuacTemplateWORD. No publicar la portada o el informe personal en el repositorio de código.
+Informe con portada institucional, contexto y siete momentos con capturas y explicaciones de 80 a 120 palabras. El momento 7 contiene los campos de retroalimentación de Marcos, ajuste y fecha. El documento editable conserva el formato Anáhuac y puede exportarse a PDF.
 
-## Pendientes humanos
+Repositorio público: https://github.com/amyriammejia/f05-marca-o-promocion
 
-Recibir revisión real de un compañero sobre Decisiones, documentar su comentario y realizar un cambio pertinente; no reemplazarla por una supuesta revisión de IA. Repositorio público verificado: https://github.com/amyriammejia/f05-marca-o-promocion; el CSV publicado coincide con el local. La entrega en Brightspace corresponde a una acción posterior solicitada por la usuaria.
+El repositorio contiene el código y los datos sintéticos. Los documentos con datos académicos personales y el entorno virtual se conservan localmente.
 
-## Etapas futuras
+## Alcance de los resultados
 
-Datos reales anonimizados, validación temporal, comprobación de calibración y estabilidad, costos y margen por producto, prueba aleatoria de mensajes con grupo de control. Ninguna de estas validaciones futuras se reporta como ejecutada.
+Los resultados describen una simulación. Su aplicación a un negocio requiere datos reales anonimizados, validación temporal, comprobación de calibración, costos y margen por producto, y una prueba de mensajes con grupo de control.

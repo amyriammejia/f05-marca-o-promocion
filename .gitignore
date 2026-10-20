@@ -11,3 +11,5 @@ entrega/
 *.log
 
 data/dataset_clientes_sinteticos_segmentos_marketing.csv
+
+respaldo_versiones/

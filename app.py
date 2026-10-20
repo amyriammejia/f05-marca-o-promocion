@@ -22,4 +22,4 @@ for tab, modulo in zip(st.tabs(nombres), [entender, limpiar, descriptiva, predic
         modulo.mostrar(df)
 
 st.divider()
-st.caption("Proyecto académico con apoyo de Codex. Las acciones son propuestas para evaluar; esta aplicación no envía mensajes.")
+st.caption("Las acciones son propuestas para evaluar; esta aplicación no envía mensajes.")

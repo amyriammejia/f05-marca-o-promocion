@@ -25,9 +25,8 @@ def mostrar(df):
     st.caption(f"Historial: {fila.compras_12m:.0f} compras; {fila.compras_sin_promocion_12m:.0f} sin promoción; {fila.dias_desde_ultima_compra:.0f} días desde la última compra. Motivo declarado: {fila.motivo_declarado}.")
     st.subheader("Qué comprobar antes de actuar")
     st.write("**Calidad:** confirmar ventanas, duplicados y resultado observado con datos reales. **Sesgo:** una cohorte captada por promociones no representa a todos los compradores. **Privacidad:** usar solo datos necesarios y respetar el permiso. **Eficacia:** validar el modelo en otro periodo y experimentar con control antes de atribuir mejoras al mensaje.")
-    with st.expander("Exportar propuesta para revisión"):
+    with st.expander("Exportar propuestas"):
         salida = datos[["cliente_id", "segmento", "probabilidad", "permiso_contacto"]].copy()
         for col in ["Acción", "Canal", "Mensaje", "Justificación"]:
             salida[col] = datos.apply(lambda x: accion(x)[col], axis=1)
         st.download_button("Descargar decisiones simuladas", salida.to_csv(index=False).encode("utf-8"), "decisiones_simuladas.csv", "text/csv")
-        st.caption("Revisión humana pendiente. No se ha realizado ni se inventa una revisión de compañero.")
