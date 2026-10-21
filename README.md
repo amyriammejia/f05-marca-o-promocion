@@ -82,11 +82,13 @@ Matriz de confusión con filas reales [no, sí] y columnas predichas [no, sí]: 
 
 Los segmentos usan proporciones del historial y tienen definiciones visibles. Las reglas priorizan permiso de contacto, resolución de incidencias y luego probabilidad e historial de cupones. Cada propuesta muestra acción, canal, mensaje, justificación, responsable y siguiente paso. Los mensajes invitan a comparar productos o revisar su utilidad, sin afirmar que existe un descuento o beneficio vigente.
 
+La ficha del cliente destaca su segmento, compras previas, compras sin promoción, días desde la última compra y motivo declarado. La justificación utiliza ese historial y el mensaje se adapta al interés en durabilidad, diseño, precio o practicidad. Los datos completados durante la limpieza se identifican como estimados. Para quienes compran también sin promoción se propone probar primero un mensaje sin descuento; para el uso frecuente de cupones, evaluar un incentivo exige conocer costos, margen y condiciones. Este piloto no ofrece descuentos. La probabilidad de recompra no permite concluir que un cliente no necesita un incentivo ni que sea leal a una marca.
+
 La pestaña Decisiones permite diseñar un piloto dentro del segmento elegido. Solo son elegibles clientes del conjunto de evaluación con permiso de contacto y sin incidencias abiertas. Se eligen el porcentaje de participantes y el porcentaje de control; la selección aleatoria es reproducible y cada cliente pertenece a un solo grupo. El control conserva la atención habitual y no recibe el mensaje de esta prueba.
 
 El indicador principal es la proporción de clientes con una nueva compra durante 60 días desde el inicio del piloto. Se propone comparar tratamiento menos control en puntos porcentuales y revisar bajas y quejas. La asignación no demuestra que la intervención haya ocurrido: la aplicación no envía mensajes, no inventa resultados y no usa la recompra histórica para calcular el efecto del piloto.
 
-El CSV del plan incluye grupo, acción, canal, mensaje, responsable, siguiente paso e indicador. Su descarga requiere confirmar la revisión de permisos, exclusiones y frecuencia de contacto, y que existan participantes en ambos grupos. Si cambia el segmento o los porcentajes, la confirmación se reinicia. El tamaño seleccionado es didáctico y no garantiza potencia estadística.
+El CSV del plan incluye grupo, acción, canal, mensaje, incentivo propuesto, responsable, siguiente paso e indicador. Su descarga requiere confirmar la revisión de permisos, exclusiones y frecuencia de contacto, y que existan participantes en ambos grupos. Si cambia el segmento o los porcentajes, la confirmación se reinicia. El tamaño seleccionado es didáctico y no garantiza potencia estadística.
 
 ## Verificación
 

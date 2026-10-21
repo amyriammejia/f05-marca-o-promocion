@@ -96,6 +96,11 @@ def analizar(df):
         limpio[c] = limpio[c].fillna("Sin información")
     limpio["segmento"] = limpio.apply(segmento, axis=1)
     evaluados = limpio.loc[test].copy()
+    # Distinguir observaciones de valores completados al presentar cada cliente.
+    evaluados["campos_imputados"] = [
+        tuple(validado.loc[i, VARIABLES].index[validado.loc[i, VARIABLES].isna()])
+        for i in test
+    ]
     evaluados["probabilidad"] = prob
     evaluados["prediccion"] = pred
     evaluados["nivel"] = np.select([prob >= 0.65, prob >= 0.35], ["Alta", "Media"], default="Baja")
@@ -117,26 +122,70 @@ def analizar(df):
             "medianas": dict(zip(NUMERICAS, mediana))}
 
 
+def valor_historial(fila, campo):
+    """Texto de un indicador; identifica los valores completados en la limpieza."""
+    valor = fila[campo]
+    if pd.isna(valor) or valor == "Sin información":
+        return "Sin dato"
+    texto = f"{valor:g}" if isinstance(valor, (int, float, np.number)) else str(valor)
+    if campo in fila.get("campos_imputados", ()):
+        texto += " (estimado)"
+    return texto
+
+
+def resumen_cliente(fila):
+    faltantes = set(fila.get("campos_imputados", ()))
+    if faltantes & {"compras_12m", "compras_sin_promocion_12m"}:
+        compras = "El historial de compras contiene valores estimados."
+    else:
+        compras = f"Ha realizado {fila.compras_sin_promocion_12m:g} de sus {fila.compras_12m:g} compras sin promoción."
+    if "dias_desde_ultima_compra" in faltantes:
+        recencia = "El tiempo desde su última compra fue estimado."
+    else:
+        recencia = f"Su última compra fue hace {fila.dias_desde_ultima_compra:g} días."
+    motivo = str(fila.motivo_declarado)
+    interes = "No hay un motivo declarado registrado." if motivo == "Sin información" else f"Su motivo declarado es {motivo.lower()}."
+    return f"{compras} {recencia} {interes}"
+
+
+def mensaje_personalizado(fila):
+    categoria = str(fila.categoria_preferida).lower()
+    objeto = "nuestro catálogo" if categoria == "sin información" else f"opciones de {categoria}"
+    enfoques = {
+        "Durabilidad": "revisa sus materiales y cuidados para elegir según la duración que buscas",
+        "Diseño": "compara estilos, colores y medidas para elegir lo que vaya contigo",
+        "Precio": "compara los precios y el costo de entrega para elegir según tu presupuesto",
+        "Practicidad": "revisa sus usos, medidas y cuidados para elegir lo que facilite tu día a día",
+    }
+    enfoque = enfoques.get(fila.motivo_declarado, "compara las características de cada artículo para elegir lo que necesites")
+    return f"Explora {objeto} y {enfoque}."
+
+
 def accion(fila):
-    categoria = fila.categoria_preferida.lower()
+    contexto = resumen_cliente(fila)
     if fila.permiso_contacto != 1:
         return {"Acción": "No enviar marketing", "Canal": "Sin envío", "Mensaje": "No se genera un mensaje comercial sin permiso de contacto.",
                 "Justificación": "La autorización de contacto prevalece sobre la probabilidad estimada.",
+                "Incentivo propuesto": "No aplica: sin permiso de contacto",
                 "Responsable": "Marketing · gestión de permisos", "Siguiente paso": "Excluir al cliente de la prueba y conservar su preferencia de contacto."}
     if fila.incidencia_abierta >= 0.5:
         return {"Acción": "Resolver la incidencia", "Canal": "Atención al cliente", "Mensaje": "Queremos dar seguimiento a tu solicitud y confirmar que quedó resuelta. ¿En qué podemos ayudarte?",
                 "Justificación": "Atender la solicitud de servicio antes de una nueva comunicación comercial.",
+                "Incentivo propuesto": "No aplica: atender primero la incidencia",
                 "Responsable": "Atención al cliente", "Siguiente paso": "Revisar la solicitud y confirmar su resolución; mantener al cliente fuera de la prueba comercial."}
     if fila.probabilidad < 0.35:
-        return {"Acción": "Seguimiento sin presión", "Canal": "Correo autorizado", "Mensaje": f"Si vuelves a buscar artículos de {categoria}, aquí puedes revisar nuestras opciones y condiciones de entrega.",
-                "Justificación": "Probabilidad baja: probar un contacto de baja frecuencia y medir respuesta.",
+        return {"Acción": "Seguimiento sin presión", "Canal": "Correo autorizado", "Mensaje": mensaje_personalizado(fila),
+                "Justificación": contexto + " La probabilidad estimada es baja; se propone un contacto de baja frecuencia, sin descuento, y medir su respuesta.",
+                "Incentivo propuesto": "Sin descuento en la primera prueba",
                 "Responsable": "Marketing CRM", "Siguiente paso": "Validar la frecuencia de contacto y probar un mensaje breve frente al grupo de control."}
     if fila.segmento == "Uso frecuente de cupones":
-        return {"Acción": "Facilitar la comparación", "Canal": "Correo autorizado", "Mensaje": f"Explora opciones de {categoria} y compara sus características para elegir lo que te convenga.",
-                "Justificación": "El historial muestra uso frecuente de cupones. Se prueba un mensaje para comparar opciones sin prometer una oferta que los datos no confirman.",
-                "Responsable": "Marketing CRM", "Siguiente paso": "Revisar el contenido de la categoría y probar el mensaje sin descuentos ni beneficios no confirmados."}
-    return {"Acción": "Presentar opciones y utilidad", "Canal": "Correo autorizado", "Mensaje": f"Explora nuestra categoría de {categoria} y revisa los detalles de cada artículo para elegir lo que necesites.",
-            "Justificación": "Combinar señales de recompra con el historial para probar un mensaje de producto y utilidad.",
+        return {"Acción": "Facilitar la comparación", "Canal": "Correo autorizado", "Mensaje": mensaje_personalizado(fila),
+                "Justificación": contexto + f" Registra {valor_historial(fila, 'compras_con_cupon_12m')} compras con cupón. Conviene evaluar un incentivo cuando se conozcan el margen y sus condiciones; en este piloto se prueba un mensaje sin descuento.",
+                "Incentivo propuesto": "Por evaluar según margen; sin descuento en este piloto",
+                "Responsable": "Marketing CRM", "Siguiente paso": "Revisar costos, margen y condiciones antes de diseñar una prueba con cupón. Este plan solo incluye mensajes sin descuento."}
+    return {"Acción": "Presentar opciones y utilidad", "Canal": "Correo autorizado", "Mensaje": mensaje_personalizado(fila),
+            "Justificación": contexto + " Se propone probar primero un mensaje sobre el producto, sin descuento, y comparar su respuesta con el grupo de control.",
+            "Incentivo propuesto": "Sin descuento en la primera prueba",
             "Responsable": "Marketing CRM", "Siguiente paso": "Revisar que el contenido corresponda a la categoría preferida y compararlo con el grupo de control."}
 
 
@@ -148,7 +197,7 @@ def crear_plan_piloto(datos, porcentaje_piloto=100, porcentaje_control=20):
         raise ValueError("Cada cliente debe aparecer una sola vez en el piloto.")
     elegibles = datos.loc[datos.permiso_contacto.eq(1) & datos.incidencia_abierta.eq(0)].sort_values("cliente_id")
     columnas = ["cliente_id", "segmento", "probabilidad_estimada", "grupo_experimento", "permiso_contacto",
-                "Acción", "Canal", "Mensaje", "Justificación", "Responsable", "Siguiente paso",
+                "Acción", "Canal", "Mensaje", "Justificación", "Incentivo propuesto", "Responsable", "Siguiente paso",
                 "indicador_principal", "ventana_dias"]
     if elegibles.empty:
         return pd.DataFrame(columns=columnas)
@@ -162,6 +211,7 @@ def crear_plan_piloto(datos, porcentaje_piloto=100, porcentaje_control=20):
         es_control = fila.cliente_id in ids_control
         if es_control:
             propuesta = {"Acción": "Sin mensaje del piloto", "Canal": "Sin envío del piloto", "Mensaje": "",
+                         "Incentivo propuesto": "Sin incentivo del piloto",
                          "Justificación": "Grupo de comparación asignado al azar.", "Responsable": "Marketing CRM",
                          "Siguiente paso": "Mantener la atención habitual y medir compras en la misma ventana que el tratamiento."}
         filas.append({"cliente_id": fila.cliente_id, "segmento": fila.segmento,

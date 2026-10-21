@@ -1,7 +1,7 @@
 import hashlib
 
 import streamlit as st
-from analisis import obtener, accion, crear_plan_piloto
+from analisis import obtener, accion, crear_plan_piloto, valor_historial
 
 
 def mostrar(df):
@@ -20,13 +20,22 @@ def mostrar(df):
     a.metric("Probabilidad de recompra", f"{fila.probabilidad:.1%}")
     b.metric("Nivel", fila.nivel)
     c.metric("Contacto autorizado", "Sí" if fila.permiso_contacto else "No")
+    st.write("**Segmento del cliente:** " + fila.segmento)
+    a, b, c, d = st.columns(4)
+    a.metric("Compras previas", valor_historial(fila, "compras_12m"))
+    b.metric("Compras sin promoción", valor_historial(fila, "compras_sin_promocion_12m"))
+    c.metric("Días desde la última compra", valor_historial(fila, "dias_desde_ultima_compra"))
+    d.metric("Motivo declarado", valor_historial(fila, "motivo_declarado"))
+    if fila.get("campos_imputados", ()):
+        st.caption("Los indicadores marcados como estimados se completaron en la limpieza. El segmento también puede depender de valores estimados.")
+    st.write("**Incentivo propuesto:** " + propuesta["Incentivo propuesto"])
+    st.caption("Es una propuesta para probar. La probabilidad de recompra no mide el efecto de un descuento ni demuestra lealtad a la marca.")
     st.subheader(propuesta["Acción"])
     st.write("**Canal:** " + propuesta["Canal"])
     st.write("**Justificación:** " + propuesta["Justificación"])
     st.info(propuesta["Mensaje"])
     st.write("**Responsable propuesto:** " + propuesta["Responsable"])
     st.write("**Siguiente paso:** " + propuesta["Siguiente paso"])
-    st.caption(f"Historial: {fila.compras_12m:.0f} compras; {fila.compras_sin_promocion_12m:.0f} sin promoción; {fila.dias_desde_ultima_compra:.0f} días desde la última compra. Motivo declarado: {fila.motivo_declarado}.")
 
     st.divider()
     st.subheader("Diseñar un piloto")
@@ -66,7 +75,7 @@ def mostrar(df):
 
     with st.expander("Revisar las propuestas del segmento"):
         salida = datos[["cliente_id", "segmento", "probabilidad", "permiso_contacto"]].copy()
-        for col in ["Acción", "Canal", "Mensaje", "Justificación", "Responsable", "Siguiente paso"]:
+        for col in ["Acción", "Canal", "Mensaje", "Justificación", "Incentivo propuesto", "Responsable", "Siguiente paso"]:
             salida[col] = datos.apply(lambda x: accion(x)[col], axis=1)
         st.dataframe(salida, hide_index=True, width="stretch")
 

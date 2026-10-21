@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from streamlit.testing.v1 import AppTest
-from analisis import cargar_datos, analizar, accion, crear_plan_piloto, VARIABLES, NUMERICAS, OBJETIVO
+from analisis import cargar_datos, analizar, accion, crear_plan_piloto, valor_historial, VARIABLES, NUMERICAS, OBJETIVO
 
 RAIZ = Path(__file__).resolve().parents[1]
 
@@ -65,6 +65,39 @@ class Practica(unittest.TestCase):
         cupon = self.r["evaluados"].query("segmento == 'Uso frecuente de cupones' and permiso_contacto == 1 and incidencia_abierta == 0 and probabilidad >= 0.35").iloc[0]
         self.assertIn(cupon.categoria_preferida.lower(), accion(cupon)["Mensaje"])
 
+    def test_decision_personalizada_y_limites_del_incentivo(self):
+        fila = self.r["evaluados"].query("cliente_id == 'SIM-0558'").iloc[0].copy()
+        propuesta = accion(fila)
+        self.assertEqual(fila.segmento, "Compra también sin promoción")
+        self.assertEqual(propuesta["Incentivo propuesto"], "Sin descuento en la primera prueba")
+        self.assertIn("4 de sus 8 compras sin promoción", propuesta["Justificación"])
+        self.assertIn("hace 30 días", propuesta["Justificación"])
+        self.assertIn("durabilidad", propuesta["Justificación"])
+        self.assertIn("materiales y cuidados", propuesta["Mensaje"])
+        self.assertIn("decoración", propuesta["Mensaje"])
+        for motivo, esperado in [("Durabilidad", "duración"), ("Diseño", "estilos"), ("Precio", "presupuesto"), ("Practicidad", "día a día"), ("Sin información", "características")]:
+            fila.motivo_declarado = motivo
+            self.assertIn(esperado, accion(fila)["Mensaje"])
+        cupon = self.r["evaluados"].query("segmento == 'Uso frecuente de cupones' and permiso_contacto == 1 and incidencia_abierta == 0 and probabilidad >= 0.35").iloc[0]
+        self.assertIn("Por evaluar según margen", accion(cupon)["Incentivo propuesto"])
+        self.assertNotIn("descuento", accion(cupon)["Mensaje"])
+        for _, cliente in self.r["evaluados"].iterrows():
+            decision = accion(cliente)
+            self.assertTrue(decision["Incentivo propuesto"])
+            self.assertNotIn("no necesita descuento", decision["Justificación"])
+            self.assertNotIn("ya iba a comprar", decision["Justificación"])
+
+    def test_indicadores_distinguen_estimaciones(self):
+        fila = self.r["evaluados"].query("cliente_id == 'SIM-0558'").iloc[0].copy()
+        fila["campos_imputados"] = ("compras_12m", "dias_desde_ultima_compra")
+        self.assertEqual(valor_historial(fila, "compras_12m"), "8 (estimado)")
+        self.assertEqual(valor_historial(fila, "compras_sin_promocion_12m"), "4")
+        self.assertIn("valores estimados", accion(fila)["Justificación"])
+        self.assertNotIn("hace 30 días", accion(fila)["Justificación"])
+        for indice, cliente in self.r["evaluados"].iterrows():
+            esperados = tuple(self.r["validado"].loc[indice, VARIABLES].index[self.r["validado"].loc[indice, VARIABLES].isna()])
+            self.assertEqual(cliente.campos_imputados, esperados)
+
     def test_piloto_separacion_y_reproducibilidad(self):
         datos = self.r["evaluados"].copy(deep=True)
         antes = datos.copy(deep=True)
@@ -78,6 +111,10 @@ class Practica(unittest.TestCase):
         self.assertFalse(set(control.cliente_id) & set(tratamiento.cliente_id))
         self.assertTrue(control.Mensaje.eq("").all())
         self.assertTrue(tratamiento.Mensaje.str.len().gt(0).all())
+        self.assertTrue(control["Incentivo propuesto"].eq("Sin incentivo del piloto").all())
+        for _, asignado in tratamiento.iterrows():
+            cliente = datos.loc[datos.cliente_id.eq(asignado.cliente_id)].iloc[0]
+            self.assertEqual(asignado["Incentivo propuesto"], accion(cliente)["Incentivo propuesto"])
         self.assertNotIn(OBJETIVO, plan.columns)
         self.assertNotIn("recompra_sin_promocion_60d", plan.columns)
         self.assertTrue(plan.ventana_dias.eq(60).all())
@@ -112,6 +149,15 @@ class Practica(unittest.TestCase):
         at.button[0].click().run()
         self.assertEqual(len(at.exception), 0)
         self.assertEqual(len(at.selectbox), 4)
+        at.selectbox(key="cliente_decision").select("SIM-0558").run()
+        textos = "\n".join(element.value for element in at.markdown)
+        self.assertIn("**Segmento del cliente:** Compra también sin promoción", textos)
+        self.assertIn("**Incentivo propuesto:** Sin descuento en la primera prueba", textos)
+        indicadores = {m.label: m.value for m in at.metric}
+        self.assertEqual(indicadores["Compras previas"], "8")
+        self.assertEqual(indicadores["Compras sin promoción"], "4")
+        self.assertEqual(indicadores["Días desde la última compra"], "30")
+        self.assertEqual(indicadores["Motivo declarado"], "Durabilidad")
         at.selectbox(key="cliente_predictiva").select(at.selectbox(key="cliente_predictiva").options[3]).run()
         at.selectbox(key="segmento_decision").select("Uso frecuente de cupones").run()
         self.assertEqual(len(at.exception), 0)
